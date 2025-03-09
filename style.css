@@ -1,0 +1,62 @@
+/* Reset default margins and padding */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+/* Style the container */
+.container {
+  max-width: 800px; /* Limits width for readability */
+  margin: 0 auto; /* Centers the container */
+  padding: 20px;
+}
+
+/* Style the header and navigation links */
+#header {
+  margin-bottom: 40px; /* Adds space below the header */
+}
+
+/* Style the logo */
+#logo {
+  display: block; /* Makes it a block for centering */
+  font-size: 2em; /* Larger text for the title */
+  text-decoration: none; /* Removes underline */
+  color: #000; /* Black text, adjust as needed */
+  margin-bottom: 20px; /* Space below the logo */
+}
+
+/* Style the navigation links */
+#header a {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2em; /* Slightly larger text */
+  text-decoration: none; /* Removes underlines */
+  color: #333; /* Dark gray, adjust as needed */
+  margin: 0 20px; /* Horizontal spacing between links */
+}
+
+/* Hover effect for links */
+#header a:hover {
+  color: #000; /* Black on hover, adjust as needed */
+}
+
+/* Style the entry link */
+.entryLink {
+  display: block; /* Makes it a block for centering */
+  text-decoration: none; /* Removes underline */
+  color: #333;
+  margin: 20px 0; /* Vertical spacing between entries */
+}
+
+/* Bold title in the entry */
+.entryLink .link {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+/* Regular text in the entry */
+.entryLink span {
+  display: block; /* Ensures it’s below the bold title */
+  margin-top: 10px; /* Space between title and description */
+}
