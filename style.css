@@ -81,7 +81,58 @@ p {
 
 /* Tighten post content width */
 .blog-post {
-  max-width: 500px; /* Reduced from 600px to tighten paragraphs */
+  max-width: 500px; /* Desktop width */
   margin: 0 auto;
   text-align: left;
+}
+
+/* Mobile Responsiveness (screens < 600px) */
+@media (max-width: 600px) {
+  .container {
+    padding: 0 10px; /* Add padding on sides for mobile */
+    max-width: 100%; /* Full width on mobile */
+  }
+
+  #header {
+    font-size: 18px; /* Smaller logo/title */
+    margin-bottom: 0.5em;
+  }
+
+  #header a:not(#logo) {
+    font-size: 12px; /* Smaller navigation links */
+    margin-right: 0.1em; /* Reduced spacing */
+    display: block; /* Stack links vertically */
+    margin-bottom: 0.5em; /* Space between stacked links */
+  }
+
+  #logo {
+    margin-bottom: 0.5em; /* Reduced spacing below logo */
+  }
+
+  .blog-list {
+    text-align: left; /* Left-align blog list on mobile */
+  }
+
+  .entryLink {
+    margin-bottom: 1.5em; /* Reduced margin between entries */
+  }
+
+  .lightText {
+    font-size: 12px; /* Smaller date text */
+  }
+
+  h1 {
+    font-size: 20px; /* Smaller title */
+    line-height: 25px;
+  }
+
+  p {
+    font-size: 14px; /* Smaller paragraph text */
+    line-height: 20px;
+  }
+
+  .blog-post {
+    max-width: 100%; /* Full width on mobile, constrained by .container padding */
+    padding: 0 10px; /* Inner padding for readability */
+  }
 }
