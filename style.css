@@ -86,7 +86,7 @@ body {
   color: #aaa;
   text-decoration: none;
   display: block;
-  margin-bottom: .66em;
+  margin-bottom: .33em; /* Reduced from .66em to tighten date-to-title spacing */
 }
 
 .small:hover {
@@ -175,6 +175,7 @@ p {
 
   .small {
     font-size: 16px;
+    margin-bottom: .33em; /* Reduced to match desktop */
   }
 
   .lightText {
