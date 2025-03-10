@@ -98,7 +98,7 @@ body {
   line-height: 30px !important;
   font-weight: 700 !important;
   color: #000 !important;
-  margin-bottom: .33em; /* Reduced to match blog post spacing */
+  margin-bottom: .33em;
   display: block;
   font-family: "Times New Roman", Times, serif;
 }
