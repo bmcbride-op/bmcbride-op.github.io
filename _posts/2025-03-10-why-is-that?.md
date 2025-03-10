@@ -12,5 +12,6 @@ Recently, I picked up a Sony Handycam from 1998—the TRV-99, one of the last Hi
 
 Why is that?
 
+![Vintage Camera Vibes](/images/ScreenShot 2025-03-10 at 14.53.45@2x.png)
 
 _/ brandon_
