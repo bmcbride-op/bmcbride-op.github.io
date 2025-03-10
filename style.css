@@ -140,12 +140,13 @@ p {
   overflow-x: hidden;
 }
 
-/* Ensure images fit within the content area and appear smaller */
-.post-image {
-  max-width: 80%; /* Reduced from 100% to show more of the image */
-  height: auto;
+/* Ensure all images in blog posts are styled */
+.blog-post img, .post-image {
+  max-width: 400px !important; /* Fixed max width to ensure visibility */
+  width: 100%; /* Ensure it scales down */
+  height: auto; /* Maintain aspect ratio */
   display: block;
-  margin: 1em auto; /* Centers the image and adds spacing */
+  margin: 1em auto; /* Center and space */
 }
 
 /* Mobile Responsiveness (screens < 600px) */
@@ -222,8 +223,9 @@ p {
     padding: 0 10px;
   }
 
-  .post-image {
-    max-width: 90%; /* Adjusted for smaller screens */
+  .blog-post img, .post-image {
+    max-width: 90% !important; /* Adjusted for smaller screens */
+    width: 100%;
     height: auto;
     margin: 0.5em auto;
   }
