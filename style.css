@@ -7,6 +7,7 @@ body {
   margin: 0;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  overflow-x: hidden; /* Prevent horizontal scrolling on mobile */
 }
 
 .container {
@@ -119,6 +120,10 @@ p {
     width: 100%;
   }
 
+  body {
+    overflow-x: hidden; /* Ensure no horizontal scroll on mobile */
+  }
+
   #header {
     font-size: 18px;
     margin-bottom: 0.5em;
@@ -145,26 +150,26 @@ p {
   }
 
   .small {
-    font-size: 14px; /* Increased from 12px */
+    font-size: 16px; /* Increased from 14px */
   }
 
   .lightText {
-    font-size: 14px; /* Increased from 12px */
+    font-size: 16px; /* Increased from 14px */
   }
 
   .link {
-    font-size: 22px; /* Increased from 20px */
-    line-height: 28px; /* Adjusted for larger text */
+    font-size: 24px; /* Increased from 22px */
+    line-height: 30px; /* Adjusted for larger text */
   }
 
   h1 {
-    font-size: 22px; /* Increased from 20px */
-    line-height: 28px; /* Adjusted for larger text */
+    font-size: 24px; /* Increased from 22px */
+    line-height: 30px; /* Adjusted for larger text */
   }
 
   p {
-    font-size: 16px; /* Increased from 14px */
-    line-height: 24px; /* Adjusted for larger text */
+    font-size: 18px; /* Increased from 16px */
+    line-height: 26px; /* Adjusted for larger text */
   }
 
   .blog-post {
