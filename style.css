@@ -98,13 +98,9 @@ body {
   line-height: 30px !important;
   font-weight: 700 !important;
   color: #000 !important;
-  margin-bottom: .66em;
+  margin-bottom: .33em; /* Reduced to match blog post spacing */
   display: block;
   font-family: "Times New Roman", Times, serif;
-}
-
-.tight-content {
-  margin-top: -0.33em;
 }
 
 .lightText {
@@ -190,10 +186,6 @@ p {
     line-height: 30px !important;
     font-weight: 700 !important;
     font-family: "Times New Roman", Times, serif;
-  }
-
-  .tight-content {
-    margin-top: -0.33em;
   }
 
   h1 {
