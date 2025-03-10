@@ -164,19 +164,17 @@ p {
 }
 
 .archive-year {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 .archive-year-toggle {
-  background: none;
-  border: none;
   font-family: "Times New Roman", Times, serif;
   font-size: 18px;
   font-weight: 700;
-  color: #000;
+  color: #0066cc;
+  text-decoration: none;
   cursor: pointer;
   padding: 0;
-  text-align: left;
 }
 
 .archive-year-toggle:hover {
@@ -189,7 +187,7 @@ p {
 }
 
 .archive-month {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.25em;
 }
 
 .month-title {
@@ -200,26 +198,6 @@ p {
 }
 
 .month-title:hover {
-  color: #468cc7;
-}
-
-.month-posts {
-  list-style: none;
-  padding-left: 1em;
-  margin: 0.25em 0 0 0;
-}
-
-.month-posts li {
-  margin-bottom: 0.25em;
-}
-
-.month-posts a {
-  font-size: 14px;
-  color: #333;
-  text-decoration: none;
-}
-
-.month-posts a:hover {
   color: #468cc7;
 }
 
@@ -320,9 +298,5 @@ p {
 
   .month-title {
     font-size: 14px;
-  }
-
-  .month-posts a {
-    font-size: 12px;
   }
 }
