@@ -7,7 +7,15 @@ body {
   margin: 0;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  overflow-x: hidden; /* Prevent horizontal scrolling on mobile */
+  overflow-x: hidden; /* Prevent horizontal scrolling globally */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+}
+
+/* Wrapper to enforce vertical scrolling */
+.site-wrapper {
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .container {
@@ -15,6 +23,7 @@ body {
   max-width: 600px;
   margin: 0 auto;
   position: relative;
+  box-sizing: border-box; /* Include padding in width */
 }
 
 #header {
@@ -50,6 +59,7 @@ body {
   max-width: 500px;
   margin: 0 auto;
   text-align: left;
+  box-sizing: border-box; /* Include padding in width */
 }
 
 .entryLink {
@@ -84,7 +94,7 @@ body {
 }
 
 .lightText {
-  font-size: 14px;
+  font-size: 16px; /* Larger font */
   color: #aaa;
   text-decoration: none;
 }
@@ -102,8 +112,8 @@ h1 {
 }
 
 p {
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 18px; /* Larger font */
+  line-height: 26px; /* Adjusted for larger text */
 }
 
 .blog-post {
@@ -111,17 +121,18 @@ p {
   margin: 0 auto;
   text-align: left;
   word-wrap: break-word;
+  box-sizing: border-box; /* Include padding in width */
 }
 
 /* Mobile Responsiveness (screens < 600px) */
 @media (max-width: 600px) {
+  .site-wrapper {
+    overflow-x: hidden; /* Reinforce no horizontal scroll */
+  }
+
   .container {
     padding: 0 10px;
     width: 100%;
-  }
-
-  body {
-    overflow-x: hidden; /* Ensure no horizontal scroll on mobile */
   }
 
   #header {
@@ -150,25 +161,25 @@ p {
   }
 
   .small {
-    font-size: 16px; /* Increased from 14px */
+    font-size: 16px; /* Larger font */
   }
 
   .lightText {
-    font-size: 16px; /* Increased from 14px */
+    font-size: 16px; /* Larger font */
   }
 
   .link {
-    font-size: 24px; /* Increased from 22px */
+    font-size: 24px; /* Larger font */
     line-height: 30px; /* Adjusted for larger text */
   }
 
   h1 {
-    font-size: 24px; /* Increased from 22px */
+    font-size: 24px; /* Larger font */
     line-height: 30px; /* Adjusted for larger text */
   }
 
   p {
-    font-size: 18px; /* Increased from 16px */
+    font-size: 18px; /* Larger font */
     line-height: 26px; /* Adjusted for larger text */
   }
 
