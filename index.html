@@ -7,9 +7,7 @@ title: Brandon McBride
     <a href="{{ post.url }}" class="entryLink">
       <span class="small">{{ post.date | date: "%B %-d, %Y" }}</span>
       <b class="link">{{ post.title }}</b>
-      <div class="tight-content">
-        <span>{{ post.content | strip_html | truncate: 100 }}</span>
-      </div>
+      <span style="margin-top: -0.33em; display: block;">{{ post.content | strip_html | truncate: 100 }}</span>
     </a>
   {% endfor %}
 </div>
