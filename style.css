@@ -101,8 +101,8 @@ body {
   margin-bottom: .33em;
   display: block;
   font-family: "Times New Roman", Times, serif;
-  -webkit-font-smoothing: antialiased; /* Ensure consistent rendering */
-  -moz-osx-font-smoothing: grayscale; /* Ensure consistent rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .lightText {
@@ -122,8 +122,8 @@ h1 {
   color: #000 !important;
   margin-bottom: .66em;
   font-family: "Times New Roman", Times, serif;
-  -webkit-font-smoothing: antialiased; /* Ensure consistent rendering */
-  -moz-osx-font-smoothing: grayscale; /* Ensure consistent rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 p {
@@ -138,6 +138,14 @@ p {
   word-wrap: break-word;
   box-sizing: border-box;
   overflow-x: hidden;
+}
+
+/* Ensure images fit within the content area */
+.post-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em 0;
 }
 
 /* Mobile Responsiveness (screens < 600px) */
@@ -212,5 +220,11 @@ p {
   .blog-post {
     max-width: 100%;
     padding: 0 10px;
+  }
+
+  .post-image {
+    max-width: 100%;
+    height: auto;
+    margin: 0.5em 0;
   }
 }
