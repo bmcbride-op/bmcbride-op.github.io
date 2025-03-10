@@ -6,11 +6,10 @@ title: Brandon McBride
   {% for post in site.posts %}
     <a href="{{ post.url }}" class="entryLink">
       <span class="small">{{ post.date | date: "%B %-d, %Y" }}</span>
-      <b class="link">{{ post.title }}</b><br />
-      <span>{{ post.content | strip_html | truncate: 100 }}</span>
+      <b class="link">{{ post.title }}</b>
+      <div class="tight-content">
+        <span>{{ post.content | strip_html | truncate: 100 }}</span>
+      </div>
     </a>
   {% endfor %}
 </div>
-
-
-
