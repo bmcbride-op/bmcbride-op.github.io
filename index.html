@@ -14,8 +14,9 @@ layout: default
       <a href="{{ post.url }}" class="entryLink">
         <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span><br />
         <b class="link">{{ post.title }}</b><br />
-        <span class="excerpt">{{ post.excerpt | strip_html | truncate: 100 }}</span>
+        <span class="excerpt">{{ post.content | strip_html | truncate: 100 }}</span>
       </a>
     {% endfor %}
   </div>
 </div>
+
