@@ -140,16 +140,90 @@ p {
   overflow-x: hidden;
 }
 
-/* Ensure all images in blog posts are styled */
 .blog-post img, .post-image {
-  max-width: 400px !important; /* Fixed max width to ensure visibility */
-  width: 100%; /* Ensure it scales down */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 400px !important;
+  width: 100%;
+  height: auto;
   display: block;
-  margin: 1em auto; /* Center and space */
+  margin: 1em auto;
+  object-fit: contain;
 }
 
-/* Mobile Responsiveness (screens < 600px) */
+/* Archives Styling */
+.archives {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.archives h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1em;
+}
+
+.archive-year {
+  margin-bottom: 1em;
+}
+
+.archive-year-toggle {
+  background: none;
+  border: none;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+}
+
+.archive-year-toggle:hover {
+  color: #468cc7;
+}
+
+.archive-months {
+  margin-top: 0.5em;
+  padding-left: 1em;
+}
+
+.archive-month {
+  margin-bottom: 0.5em;
+}
+
+.month-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.month-title:hover {
+  color: #468cc7;
+}
+
+.month-posts {
+  list-style: none;
+  padding-left: 1em;
+  margin: 0.25em 0 0 0;
+}
+
+.month-posts li {
+  margin-bottom: 0.25em;
+}
+
+.month-posts a {
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+}
+
+.month-posts a:hover {
+  color: #468cc7;
+}
+
+/* Mobile Responsiveness */
 @media (max-width: 600px) {
   html, body, .site-wrapper {
     overflow-x: hidden;
@@ -224,9 +298,31 @@ p {
   }
 
   .blog-post img, .post-image {
-    max-width: 90% !important; /* Adjusted for smaller screens */
+    max-width: 90% !important;
     width: 100%;
     height: auto;
     margin: 0.5em auto;
+    object-fit: contain;
+  }
+
+  .archives {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .archives h2 {
+    font-size: 20px;
+  }
+
+  .archive-year-toggle {
+    font-size: 16px;
+  }
+
+  .month-title {
+    font-size: 14px;
+  }
+
+  .month-posts a {
+    font-size: 12px;
   }
 }
