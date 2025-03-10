@@ -1,5 +1,5 @@
 html {
-  overflow-x: hidden; /* Prevent horizontal scroll at root */
+  overflow-x: hidden;
 }
 
 body {
@@ -28,14 +28,14 @@ body {
   margin: 0 auto;
   position: relative;
   box-sizing: border-box;
-  overflow-x: hidden; /* Additional layer of overflow protection */
+  overflow-x: hidden;
 }
 
 #header {
   text-align: center;
   font-size: 22px;
   margin-bottom: 1em;
-  max-width: 100%; /* Ensure header doesn't overflow */
+  max-width: 100%;
 }
 
 #logo {
@@ -66,7 +66,7 @@ body {
   margin: 0 auto;
   text-align: left;
   box-sizing: border-box;
-  overflow-x: hidden; /* Prevent overflow in blog list */
+  overflow-x: hidden;
 }
 
 .entryLink {
@@ -74,7 +74,7 @@ body {
   margin-bottom: 2em;
   text-decoration: none;
   color: inherit;
-  white-space: normal; /* Ensure text wraps */
+  white-space: normal;
 }
 
 .entryLink:hover {
@@ -86,7 +86,7 @@ body {
   color: #aaa;
   text-decoration: none;
   display: block;
-  margin-bottom: 0.66em;
+  margin-bottom: 0.33em; /* Reduced to match blog post spacing */
 }
 
 .small:hover {
@@ -94,12 +94,13 @@ body {
 }
 
 .link {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 700;
-  color: #000;
-  margin-bottom: .66em;
-  display: block; /* Ensure block-level for consistency */
+  font-size: 24px !important; /* Reinforced for consistency */
+  line-height: 30px !important;
+  font-weight: 700 !important;
+  color: #000 !important;
+  margin-bottom: 0.33em; /* Reduced to match blog post spacing */
+  display: block;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .lightText {
@@ -113,11 +114,12 @@ body {
 }
 
 h1 {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 700;
-  color: #000;
+  font-size: 24px !important;
+  line-height: 30px !important;
+  font-weight: 700 !important;
+  color: #000 !important;
   margin-bottom: .66em;
+  font-family: "Times New Roman", Times, serif;
 }
 
 p {
@@ -131,19 +133,19 @@ p {
   text-align: left;
   word-wrap: break-word;
   box-sizing: border-box;
-  overflow-x: hidden; /* Prevent overflow in blog post */
+  overflow-x: hidden;
 }
 
 /* Mobile Responsiveness (screens < 600px) */
 @media (max-width: 600px) {
   html, body, .site-wrapper {
-    overflow-x: hidden; /* Reinforce at all levels */
+    overflow-x: hidden;
   }
 
   .container {
     padding: 0 10px;
     width: 100%;
-    max-width: 100%; /* Ensure no overflow */
+    max-width: 100%;
   }
 
   #header {
@@ -180,13 +182,17 @@ p {
   }
 
   .link {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 24px !important;
+    line-height: 30px !important;
+    font-weight: 700 !important;
+    font-family: "Times New Roman", Times, serif;
   }
 
   h1 {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 24px !important;
+    line-height: 30px !important;
+    font-weight: 700 !important;
+    font-family: "Times New Roman", Times, serif;
   }
 
   p {
