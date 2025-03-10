@@ -1,8 +1,8 @@
-—
+---
 layout: default
 title: Why is that?
 date: 2025-03-10 12:23
-—
+---
 
 When the sun emerges and the winter clouds part, something inside me awakens, urging me to soak in as much of its warmth as I can. Yet, on a Monday like today, I’m tethered indoors, tending to client requests. It’s a tension I’ve often pondered—how life can feel so full of contradictions. I’m a self-proclaimed tech enthusiast, but I find myself drawn more to older technologies than the latest innovations. The outdoors soothe me, grounding me in the world around me, yet I love sinking into the comfort of video games indoors. My phone, which I rely on daily for countless tasks, is the piece of tech I resent most.
 
