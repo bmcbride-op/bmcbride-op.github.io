@@ -5,13 +5,13 @@ body {
   background: #fafafa;
   padding: 0;
   margin: 0;
-  word-wrap: break-word; /* Ensure text wraps on mobile */
-  overflow-wrap: break-word; /* Fallback for text overflow */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .container {
-  width: 90%; /* Relative width for mobile */
-  max-width: 600px; /* Desktop cap */
+  width: 90%;
+  max-width: 600px;
   margin: 0 auto;
   position: relative;
 }
@@ -109,14 +109,14 @@ p {
   max-width: 500px;
   margin: 0 auto;
   text-align: left;
-  word-wrap: break-word; /* Ensure text wraps */
+  word-wrap: break-word;
 }
 
 /* Mobile Responsiveness (screens < 600px) */
 @media (max-width: 600px) {
   .container {
     padding: 0 10px;
-    width: 100%; /* Full width on mobile */
+    width: 100%;
   }
 
   #header {
@@ -136,8 +136,8 @@ p {
   }
 
   .blog-list {
-    max-width: 100%; /* Full width on mobile */
-    padding: 0 10px; /* Inner padding for readability */
+    max-width: 100%;
+    padding: 0 10px;
   }
 
   .entryLink {
@@ -145,26 +145,26 @@ p {
   }
 
   .small {
-    font-size: 12px;
+    font-size: 14px; /* Increased from 12px */
   }
 
   .lightText {
-    font-size: 12px;
+    font-size: 14px; /* Increased from 12px */
   }
 
   .link {
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 22px; /* Increased from 20px */
+    line-height: 28px; /* Adjusted for larger text */
   }
 
   h1 {
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 22px; /* Increased from 20px */
+    line-height: 28px; /* Adjusted for larger text */
   }
 
   p {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px; /* Increased from 14px */
+    line-height: 24px; /* Adjusted for larger text */
   }
 
   .blog-post {
