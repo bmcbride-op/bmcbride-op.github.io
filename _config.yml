@@ -1,5 +1,5 @@
 title: Brandon McBride
 description: A log of my interests and inspirations
 baseurl: "" # Leave empty for root domain (housemcbride.com)
-url: "https://www.housemcbride.com" # Your domain, or use username.github.io for now
+url: "https://housemcbride.com" # Your domain, or use username.github.io for now
 theme: minima # A default Jekyll theme (we’ll customize later)
