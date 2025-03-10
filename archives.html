@@ -9,7 +9,8 @@ title: Archives
     <div class="archive-year">
       <a href="#" class="archive-year-toggle" data-year="{{ year }}">{{ year }}</a>
       <div class="archive-months" style="display: none;">
-        {% assign posts_by_month = site.posts | where_exp: "post", "post.date | date: '%Y' == year" | group_by_exp: "post", "post.date | date: '%B'" %}
+        {% assign year_posts = site.posts | where_exp: "post", "post.date | date: '%Y' == year" %}
+        {% assign posts_by_month = year_posts | group_by_exp: "post", "post.date | date: '%B'" %}
         {% for month_group in posts_by_month %}
           {% assign month_name = month_group.name %}
           {% assign month_number = month_group.items | first | date: "%m" %}
