@@ -3,10 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.title }}'s blog" href="/feed.rss">
+    <link rel="icon" href="" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Times+New+Roman" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    {{ content }}
+    <div class="container">
+      <br /><br /><br />
+      <div id="header">
+        <a id="logo" href="/">{{ site.title }}</a>
+        <a href="/" title="Home">Home</a>
+        <a href="/now" title="Now">Now</a>
+        <a href="/archives" title="Archives">Archives</a>
+        <a href="/search" title="Search">Search</a>
+      </div>
+      <br /><br />
+      {{ content }}
+    </div>
   </body>
 </html>
