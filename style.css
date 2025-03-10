@@ -140,12 +140,12 @@ p {
   overflow-x: hidden;
 }
 
-/* Ensure images fit within the content area */
+/* Ensure images fit within the content area and appear smaller */
 .post-image {
-  max-width: 100%;
+  max-width: 80%; /* Reduced from 100% to show more of the image */
   height: auto;
   display: block;
-  margin: 1em 0;
+  margin: 1em auto; /* Centers the image and adds spacing */
 }
 
 /* Mobile Responsiveness (screens < 600px) */
@@ -223,8 +223,8 @@ p {
   }
 
   .post-image {
-    max-width: 100%;
+    max-width: 90%; /* Adjusted for smaller screens */
     height: auto;
-    margin: 0.5em 0;
+    margin: 0.5em auto;
   }
 }
