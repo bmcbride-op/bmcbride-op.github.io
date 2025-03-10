@@ -2,19 +2,22 @@
 layout: default
 title: Archives
 ---
+
 <div class="archives">
   <h2>Archives</h2>
-  {% assign posts_by_year = site.posts | group_by: "date" | sort: "name" | reverse %}
-  {% for year_group in posts_by_year %}
-    {% assign year = year_group.name | date: "%Y" %}
+  {% assign unique_years = site.posts | map: "date" | map: "%Y" | uniq | sort | reverse %}
+  {% for year in unique_years %}
     <div class="archive-year">
-      <button class="archive-year-toggle">{{ year }}</button>
+      <a href="#" class="archive-year-toggle" data-year="{{ year }}">{{ year }}</a>
       <div class="archive-months" style="display: none;">
-        {% assign posts_by_month = year_group.items | group_by_exp: "post", "post.date | date: '%B'" %}
+        {% assign posts_by_month = site.posts | where_exp: "post", "post.date | date: '%Y' == year" | group_by_exp: "post", "post.date | date: '%B'" %}
         {% for month_group in posts_by_month %}
+          {% assign month_name = month_group.name %}
+          {% assign month_number = month_group.items | first | date: "%m" %}
+          {% assign month_url = "/archives/" | append: year | append: "/" | append: month_number %}
           <div class="archive-month">
-            <a href="#" class="month-title">{{ month_group.name }}</a>
-            <ul class="month-posts">
+            <a href="{{ month_url }}" class="month-title">{{ month_name }}</a>
+            <ul class="month-posts" style="display: none;">
               {% for post in month_group.items %}
                 <li><a href="{{ post.url }}">{{ post.title }}</a></li>
               {% endfor %}
@@ -25,5 +28,3 @@ title: Archives
     </div>
   {% endfor %}
 </div>
-
-
