@@ -78,3 +78,10 @@ p {
   font-size: 16px;
   line-height: 23px;
 }
+
+/* Tighten post content width */
+.blog-post {
+  max-width: 500px; /* Reduced from 600px to tighten paragraphs */
+  margin: 0 auto;
+  text-align: left;
+}
