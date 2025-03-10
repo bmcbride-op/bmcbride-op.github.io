@@ -1,22 +1,16 @@
 ---
 layout: default
+title: Brandon McBride
 ---
-<div class="container">
-  <div id="header">
-    <a id="logo" href="/">{{ site.title }}</a>
-    <a href="/" title="Home">Home</a>
-    <a href="/now" title="Now">Now</a>
-    <a href="/archives" title="Archives">Archives</a>
-    <a href="/search" title="Search">Search</a>
-  </div>
-  <div class="blog-list">
-    {% for post in site.posts %}
-      <a href="{{ post.url }}" class="entryLink">
-        <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span><br />
-        <b class="link">{{ post.title }}</b><br />
-        <span class="excerpt">{{ post.content | strip_html | truncate: 100 }}</span>
-      </a>
-    {% endfor %}
-  </div>
+<div class="blog-list">
+  {% for post in site.posts %}
+    <a href="{{ post.url }}" class="entryLink">
+      <span class="small">{{ post.date | date: "%B %-d, %Y" }}</span>
+      <b class="link">{{ post.title }}</b><br />
+      <span>{{ post.content | strip_html | truncate: 100 }}</span>
+    </a>
+  {% endfor %}
 </div>
+
+
 
