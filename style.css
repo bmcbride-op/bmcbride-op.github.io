@@ -14,7 +14,7 @@ body {
 }
 
 #header {
-  text-align: center; /* Centered header like your friend's */
+  text-align: center;
   font-size: 22px;
   margin-bottom: 1em;
 }
@@ -34,11 +34,15 @@ body {
   margin-right: .2em;
   letter-spacing: .05em;
   text-decoration: none;
-  color: #0066cc; /* Blue links like your friend's */
+  color: #0066cc;
 }
 
 #header a:hover {
   color: #468cc7;
+}
+
+.blog-list {
+  text-align: center;
 }
 
 .entryLink {
@@ -52,32 +56,17 @@ body {
   color: #468cc7;
 }
 
-.small {
-  font-size: 12px;
-  margin-top: .33em;
-  display: block;
-  color: #666; /* Gray date like your friend's */
+.lightText {
+  font-size: 14px;
+  color: #aaa;
+  text-decoration: none;
 }
 
-.link {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-  color: #000;
+.lightText:hover {
+  color: #468cc7;
 }
 
-.blog-list {
-  text-align: center; /* Center the blog list on index */
-}
-
-/* Full post content */
-.blog-post {
-  text-align: left; /* Left-justify post content */
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.blog-post h1 {
+h1 {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -85,7 +74,7 @@ body {
   margin-bottom: .66em;
 }
 
-.blog-post p {
+p {
   font-size: 16px;
   line-height: 23px;
 }
