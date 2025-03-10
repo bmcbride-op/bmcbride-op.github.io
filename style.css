@@ -1,89 +1,91 @@
 body {
-  margin: 0;
-  padding: 0;
   font-family: "Times New Roman", Times, serif;
+  line-height: 150%;
+  color: #333;
+  background: #fafafa;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
-  padding: 20px;
+  position: relative;
 }
 
 #header {
-  text-align: center;
-  margin-bottom: 40px;
+  text-align: center; /* Centered header like your friend's */
+  font-size: 22px;
+  margin-bottom: 1em;
 }
 
 #logo {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-weight: 700;
   display: block;
-  font-size: 2em;
-  text-decoration: none;
   color: #000;
-  margin-bottom: 20px;
+  position: relative;
+  margin-bottom: 0;
 }
 
-#header a {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 1.2em;
+#header a:not(#logo) {
+  font-size: 14px;
+  margin-right: .2em;
+  letter-spacing: .05em;
   text-decoration: none;
   color: #0066cc; /* Blue links like your friend's */
-  margin: 0 15px; /* Spacing between links */
 }
 
 #header a:hover {
-  color: #000;
-}
-
-.blog-list {
-  margin: 20px 0;
+  color: #468cc7;
 }
 
 .entryLink {
   display: block;
+  margin-bottom: 2em;
   text-decoration: none;
-  color: #333;
-  margin: 20px 0;
+  color: inherit;
 }
 
-.entryLink .date {
+.entryLink:hover {
+  color: #468cc7;
+}
+
+.small {
+  font-size: 12px;
+  margin-top: .33em;
   display: block;
-  font-size: 0.9em;
-  color: #666;
-  margin-bottom: 5px;
+  color: #666; /* Gray date like your friend's */
 }
 
-.entryLink .link {
-  font-weight: bold;
-  font-size: 1.3em;
+.link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
 }
 
-.entryLink .excerpt {
-  display: block;
-  margin-top: 10px;
+.blog-list {
+  text-align: center; /* Center the blog list on index */
 }
 
-/* Blog post content */
+/* Full post content */
 .blog-post {
-  text-align: left; /* Left-justified like your friend's */
+  text-align: left; /* Left-justify post content */
   max-width: 600px;
   margin: 0 auto;
-  padding: 20px 0;
 }
 
 .blog-post h1 {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-.blog-post .date {
-  display: block;
-  font-size: 0.9em;
-  color: #666;
-  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: .66em;
 }
 
 .blog-post p {
-  line-height: 1.6;
-  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 23px;
 }
