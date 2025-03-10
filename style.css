@@ -31,8 +31,8 @@ body {
 
 #header a:not(#logo) {
   font-size: 14px;
-  margin-right: .4em; /* Increased from .2em for more horizontal spacing */
-  margin-bottom: .2em; /* Added small vertical spacing */
+  margin-right: .4em;
+  margin-bottom: .2em;
   letter-spacing: .05em;
   text-decoration: none;
   color: #0066cc;
@@ -43,7 +43,9 @@ body {
 }
 
 .blog-list {
-  text-align: center;
+  max-width: 500px; /* Match .blog-post width */
+  margin: 0 auto; /* Center the blog list */
+  text-align: left; /* Left-justify content */
 }
 
 .entryLink {
@@ -55,6 +57,26 @@ body {
 
 .entryLink:hover {
   color: #468cc7;
+}
+
+.small {
+  font-size: 14px; /* Match .lightText size */
+  color: #aaa; /* Light gray to match post page date */
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.66em; /* Match h1 margin-bottom for spacing */
+}
+
+.small:hover {
+  color: #468cc7;
+}
+
+.link {
+  font-size: 24px; /* Match h1 size */
+  line-height: 30px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: .66em; /* Match h1 margin-bottom */
 }
 
 .lightText {
@@ -82,7 +104,7 @@ p {
 
 /* Tighten post content width */
 .blog-post {
-  max-width: 500px; /* Desktop width */
+  max-width: 500px;
   margin: 0 auto;
   text-align: left;
 }
@@ -90,50 +112,60 @@ p {
 /* Mobile Responsiveness (screens < 600px) */
 @media (max-width: 600px) {
   .container {
-    padding: 0 10px; /* Add padding on sides for mobile */
-    max-width: 100%; /* Full width on mobile */
+    padding: 0 10px;
+    max-width: 100%;
   }
 
   #header {
-    font-size: 18px; /* Smaller logo/title */
+    font-size: 18px;
     margin-bottom: 0.5em;
   }
 
   #header a:not(#logo) {
-    font-size: 12px; /* Smaller navigation links */
-    margin-right: .2em; /* Reduced horizontal spacing on mobile */
-    display: block; /* Stack links vertically */
-    margin-bottom: 0.5em; /* Space between stacked links */
+    font-size: 12px;
+    margin-right: .2em;
+    display: block;
+    margin-bottom: 0.5em;
   }
 
   #logo {
-    margin-bottom: 0.5em; /* Reduced spacing below logo */
+    margin-bottom: 0.5em;
   }
 
   .blog-list {
-    text-align: left; /* Left-align blog list on mobile */
+    max-width: 100%; /* Full width on mobile */
+    text-align: left;
   }
 
   .entryLink {
-    margin-bottom: 1.5em; /* Reduced margin between entries */
+    margin-bottom: 1.5em;
+  }
+
+  .small {
+    font-size: 12px;
   }
 
   .lightText {
-    font-size: 12px; /* Smaller date text */
+    font-size: 12px;
+  }
+
+  .link {
+    font-size: 20px; /* Match h1 mobile size */
+    line-height: 25px;
   }
 
   h1 {
-    font-size: 20px; /* Smaller title */
+    font-size: 20px;
     line-height: 25px;
   }
 
   p {
-    font-size: 14px; /* Smaller paragraph text */
+    font-size: 14px;
     line-height: 20px;
   }
 
   .blog-post {
-    max-width: 100%; /* Full width on mobile, constrained by .container padding */
-    padding: 0 10px; /* Inner padding for readability */
+    max-width: 100%;
+    padding: 0 10px;
   }
 }
