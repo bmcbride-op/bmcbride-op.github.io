@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden; /* Prevent horizontal scroll at root */
+}
+
 body {
   font-family: "Times New Roman", Times, serif;
   line-height: 150%;
@@ -7,15 +11,15 @@ body {
   margin: 0;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  overflow-x: hidden; /* Prevent horizontal scrolling globally */
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
-/* Wrapper to enforce vertical scrolling */
 .site-wrapper {
   overflow-x: hidden;
   width: 100%;
   min-height: 100vh;
+  box-sizing: border-box;
 }
 
 .container {
@@ -23,13 +27,15 @@ body {
   max-width: 600px;
   margin: 0 auto;
   position: relative;
-  box-sizing: border-box; /* Include padding in width */
+  box-sizing: border-box;
+  overflow-x: hidden; /* Additional layer of overflow protection */
 }
 
 #header {
   text-align: center;
   font-size: 22px;
   margin-bottom: 1em;
+  max-width: 100%; /* Ensure header doesn't overflow */
 }
 
 #logo {
@@ -59,7 +65,8 @@ body {
   max-width: 500px;
   margin: 0 auto;
   text-align: left;
-  box-sizing: border-box; /* Include padding in width */
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent overflow in blog list */
 }
 
 .entryLink {
@@ -67,6 +74,7 @@ body {
   margin-bottom: 2em;
   text-decoration: none;
   color: inherit;
+  white-space: normal; /* Ensure text wraps */
 }
 
 .entryLink:hover {
@@ -91,10 +99,11 @@ body {
   font-weight: 700;
   color: #000;
   margin-bottom: .66em;
+  display: block; /* Ensure block-level for consistency */
 }
 
 .lightText {
-  font-size: 16px; /* Larger font */
+  font-size: 16px;
   color: #aaa;
   text-decoration: none;
 }
@@ -112,8 +121,8 @@ h1 {
 }
 
 p {
-  font-size: 18px; /* Larger font */
-  line-height: 26px; /* Adjusted for larger text */
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .blog-post {
@@ -121,18 +130,20 @@ p {
   margin: 0 auto;
   text-align: left;
   word-wrap: break-word;
-  box-sizing: border-box; /* Include padding in width */
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent overflow in blog post */
 }
 
 /* Mobile Responsiveness (screens < 600px) */
 @media (max-width: 600px) {
-  .site-wrapper {
-    overflow-x: hidden; /* Reinforce no horizontal scroll */
+  html, body, .site-wrapper {
+    overflow-x: hidden; /* Reinforce at all levels */
   }
 
   .container {
     padding: 0 10px;
     width: 100%;
+    max-width: 100%; /* Ensure no overflow */
   }
 
   #header {
@@ -161,26 +172,26 @@ p {
   }
 
   .small {
-    font-size: 16px; /* Larger font */
+    font-size: 16px;
   }
 
   .lightText {
-    font-size: 16px; /* Larger font */
+    font-size: 16px;
   }
 
   .link {
-    font-size: 24px; /* Larger font */
-    line-height: 30px; /* Adjusted for larger text */
+    font-size: 24px;
+    line-height: 30px;
   }
 
   h1 {
-    font-size: 24px; /* Larger font */
-    line-height: 30px; /* Adjusted for larger text */
+    font-size: 24px;
+    line-height: 30px;
   }
 
   p {
-    font-size: 18px; /* Larger font */
-    line-height: 26px; /* Adjusted for larger text */
+    font-size: 18px;
+    line-height: 26px;
   }
 
   .blog-post {
