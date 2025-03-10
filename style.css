@@ -86,7 +86,7 @@ body {
   color: #aaa;
   text-decoration: none;
   display: block;
-  margin-bottom: 0.33em; /* Reduced to match blog post spacing */
+  margin-bottom: .66em;
 }
 
 .small:hover {
@@ -94,13 +94,17 @@ body {
 }
 
 .link {
-  font-size: 24px !important; /* Reinforced for consistency */
+  font-size: 24px !important;
   line-height: 30px !important;
   font-weight: 700 !important;
   color: #000 !important;
-  margin-bottom: 0.33em; /* Reduced to match blog post spacing */
+  margin-bottom: .66em;
   display: block;
   font-family: "Times New Roman", Times, serif;
+}
+
+.tight-content {
+  margin-top: -0.33em;
 }
 
 .lightText {
@@ -186,6 +190,10 @@ p {
     line-height: 30px !important;
     font-weight: 700 !important;
     font-family: "Times New Roman", Times, serif;
+  }
+
+  .tight-content {
+    margin-top: -0.33em;
   }
 
   h1 {
