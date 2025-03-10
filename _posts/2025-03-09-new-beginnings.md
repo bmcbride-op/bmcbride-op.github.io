@@ -1,4 +1,4 @@
-```markdown
+markdown
 layout: default
 title: New Beginnings
 date: 2025-03-09 22:32
