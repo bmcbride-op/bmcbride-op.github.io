@@ -86,7 +86,7 @@ body {
   color: #aaa;
   text-decoration: none;
   display: block;
-  margin-bottom: .33em; /* Reduced from .66em to tighten date-to-title spacing */
+  margin-bottom: .33em;
 }
 
 .small:hover {
@@ -101,6 +101,8 @@ body {
   margin-bottom: .33em;
   display: block;
   font-family: "Times New Roman", Times, serif;
+  -webkit-font-smoothing: antialiased; /* Ensure consistent rendering */
+  -moz-osx-font-smoothing: grayscale; /* Ensure consistent rendering */
 }
 
 .lightText {
@@ -120,6 +122,8 @@ h1 {
   color: #000 !important;
   margin-bottom: .66em;
   font-family: "Times New Roman", Times, serif;
+  -webkit-font-smoothing: antialiased; /* Ensure consistent rendering */
+  -moz-osx-font-smoothing: grayscale; /* Ensure consistent rendering */
 }
 
 p {
@@ -175,7 +179,7 @@ p {
 
   .small {
     font-size: 16px;
-    margin-bottom: .33em; /* Reduced to match desktop */
+    margin-bottom: .33em;
   }
 
   .lightText {
@@ -187,6 +191,8 @@ p {
     line-height: 30px !important;
     font-weight: 700 !important;
     font-family: "Times New Roman", Times, serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h1 {
@@ -194,6 +200,8 @@ p {
     line-height: 30px !important;
     font-weight: 700 !important;
     font-family: "Times New Roman", Times, serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   p {
