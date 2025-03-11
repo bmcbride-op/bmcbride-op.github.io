@@ -40,7 +40,7 @@ body {
 
 #logo {
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   font-weight: 700;
   display: block;
   color: #000;
@@ -50,9 +50,9 @@ body {
 
 #header a:not(#logo) {
   font-size: 14px;
-  margin-right: .4em;
-  margin-bottom: .2em;
-  letter-spacing: .05em;
+  margin-right: 0.4em;
+  margin-bottom: 0.2em;
+  letter-spacing: 0.05em;
   text-decoration: none;
   color: #0066cc;
 }
@@ -86,7 +86,7 @@ body {
   color: #aaa;
   text-decoration: none;
   display: block;
-  margin-bottom: .33em;
+  margin-bottom: 0.33em;
 }
 
 .small:hover {
@@ -98,7 +98,7 @@ body {
   line-height: 30px !important;
   font-weight: 700 !important;
   color: #000 !important;
-  margin-bottom: .33em;
+  margin-bottom: 0.33em;
   display: block;
   font-family: "Times New Roman", Times, serif;
   -webkit-font-smoothing: antialiased;
@@ -120,7 +120,7 @@ h1 {
   line-height: 30px !important;
   font-weight: 700 !important;
   color: #000 !important;
-  margin-bottom: .66em;
+  margin-bottom: 0.66em;
   font-family: "Times New Roman", Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -140,7 +140,8 @@ p {
   overflow-x: hidden;
 }
 
-.blog-post img, .post-image {
+.blog-post img,
+.post-image {
   max-width: 400px !important;
   width: 100%;
   height: auto;
@@ -241,7 +242,9 @@ p {
 
 /* Mobile Responsiveness */
 @media (max-width: 600px) {
-  html, body, .site-wrapper {
+  html,
+  body,
+  .site-wrapper {
     overflow-x: hidden;
   }
 
@@ -258,7 +261,7 @@ p {
 
   #header a:not(#logo) {
     font-size: 12px;
-    margin-right: .2em;
+    margin-right: 0.2em;
     display: block;
     margin-bottom: 0.5em;
   }
@@ -278,7 +281,7 @@ p {
 
   .small {
     font-size: 16px;
-    margin-bottom: .33em;
+    margin-bottom: 0.33em;
   }
 
   .lightText {
@@ -313,7 +316,8 @@ p {
     padding: 0 10px;
   }
 
-  .blog-post img, .post-image {
+  .blog-post img,
+  .post-image {
     max-width: 90% !important;
     width: 100%;
     height: auto;
