@@ -4,7 +4,7 @@
   src: url("/fonts/TX-02-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-  font-display: swap; /* Improve font loading behavior */
+  font-display: swap;
 }
 
 @font-face {
@@ -16,12 +16,12 @@
 }
 
 :root {
-  --monospace: "Berkeley Mono", "Courier New", Courier, monospace; /* Use Berkeley Mono */
+  --monospace: "Berkeley Mono", "Courier New", Courier, monospace;
 }
 
-/* Temporary debug rule to check font loading */
+/* Enhanced debug rule to check font loading */
 body::after {
-  content: "Font Test: " attr(font-family);
+  content: "Font Test: " attr(font-family) " (Loaded: " attr(font-family) ")";
   position: fixed;
   bottom: 0;
   left: 0;
@@ -29,7 +29,7 @@ body::after {
   color: #000;
   background: #fff;
   z-index: 1000;
-  display: none; /* Remove this line after testing */
+  display: block; /* Show debug text */
 }
 
 html {
@@ -37,7 +37,7 @@ html {
 }
 
 body {
-  font-family: var(--monospace);
+  font-family: var(--monospace) !important; /* Added !important to override any defaults */
   font-size: 1.7rem;
   line-height: 1.8;
   color: #333;
