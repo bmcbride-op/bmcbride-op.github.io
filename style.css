@@ -1,7 +1,7 @@
-/* Define Berkeley Mono font using .woff2 (or .ttf if not converted) */
+/* Define Berkeley Mono font using .ttf */
 @font-face {
   font-family: "Berkeley Mono";
-  src: url("/fonts/TX-02-Regular.woff2") format("woff2"); /* Assuming .woff2 after conversion */
+  src: url("/fonts/TX-02-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: "Berkeley Mono";
-  src: url("/fonts/TX-02-Bold.woff2") format("woff2");
+  src: url("/fonts/TX-02-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -25,7 +25,7 @@ html {
 
 body {
   font-family: var(--monospace) !important;
-  font-size: 1.3rem; /* Reduced from 1.5rem to 1.3rem */
+  font-size: 1.2rem;
   line-height: 1.8;
   color: #333;
   background: #fafafa;
@@ -46,7 +46,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
   position: relative;
   box-sizing: border-box;
@@ -55,7 +55,7 @@ body {
 
 #header {
   text-align: center;
-  font-size: 1.8rem; /* Reduced from 2.0rem to 1.8rem */
+  font-size: 1.7rem;
   margin-bottom: 1em;
   max-width: 100%;
 }
@@ -68,11 +68,11 @@ body {
   color: #000;
   position: relative;
   margin-bottom: 0;
-  font-size: 1.8rem; /* Match header size */
+  font-size: 1.7rem;
 }
 
 #header a:not(#logo) {
-  font-size: 1.1rem; /* Reduced from 1.2rem to 1.1rem */
+  font-size: 1.0rem;
   margin-right: 0.4em;
   margin-bottom: 0.2em;
   letter-spacing: 0.05em;
@@ -85,7 +85,7 @@ body {
 }
 
 .blog-list {
-  max-width: 500px;
+  max-width: 700px;
   margin: 0 auto;
   text-align: left;
   box-sizing: border-box;
@@ -98,7 +98,7 @@ body {
   text-decoration: none;
   color: inherit;
   white-space: normal;
-  font-size: 1.3rem; /* Match body size */
+  font-size: 1.2rem;
 }
 
 .entryLink:hover {
@@ -106,7 +106,7 @@ body {
 }
 
 .small {
-  font-size: 1.1rem; /* Reduced from 1.2rem to 1.1rem */
+  font-size: 1.0rem;
   color: #aaa;
   text-decoration: none;
   display: block;
@@ -118,7 +118,7 @@ body {
 }
 
 .link {
-  font-size: 2.0rem !important; /* Reduced from 2.2rem to 2.0rem */
+  font-size: 1.8rem !important;
   line-height: 1.8;
   font-weight: 700 !important;
   color: #000 !important;
@@ -130,7 +130,7 @@ body {
 }
 
 .lightText {
-  font-size: 1.2rem; /* Reduced from 1.4rem to 1.2rem */
+  font-size: 1.1rem;
   color: #aaa;
   text-decoration: none;
 }
@@ -140,7 +140,7 @@ body {
 }
 
 h1 {
-  font-size: 2.0rem !important; /* Reduced from 2.2rem to 2.0rem */
+  font-size: 1.8rem !important;
   line-height: 1.8;
   font-weight: 700 !important;
   color: #000 !important;
@@ -151,12 +151,12 @@ h1 {
 }
 
 p {
-  font-size: 1.3rem; /* Match body size */
+  font-size: 1.2rem;
   line-height: 1.8;
 }
 
 .blog-post {
-  max-width: 500px;
+  max-width: 700px;
   margin: 0 auto;
   text-align: left;
   word-wrap: break-word;
@@ -176,13 +176,13 @@ p {
 
 /* Archives Styling with Expand/Collapse */
 .archives {
-  max-width: 500px;
+  max-width: 700px;
   margin: 0 auto;
   text-align: left;
 }
 
 .archives h2 {
-  font-size: 2.0rem; /* Reduced from 2.2rem to 2.0rem */
+  font-size: 1.8rem;
   font-weight: 700;
   color: #000;
   margin-bottom: 1em;
@@ -197,7 +197,7 @@ p {
 }
 
 .archive-year-toggle {
-  font-size: 1.4rem; /* Reduced from 1.6rem to 1.4rem */
+  font-size: 1.3rem;
   font-weight: 700;
   color: #0066cc;
   text-decoration: none;
@@ -223,7 +223,7 @@ p {
 }
 
 .month-title {
-  font-size: 1.2rem; /* Reduced from 1.4rem to 1.2rem */
+  font-size: 1.1rem;
   font-weight: 700;
   color: #0066cc;
   text-decoration: none;
@@ -250,7 +250,7 @@ p {
 }
 
 .month-posts li {
-  font-size: 1.3rem; /* Reduced from 1.5rem to 1.3rem to match body */
+  font-size: 1.2rem;
   color: #333;
   margin-bottom: 0.25em;
 }
@@ -266,20 +266,20 @@ p {
 
 /* Now Page Styling */
 .now {
-  max-width: 500px;
+  max-width: 700px;
   margin: 0 auto;
   text-align: left;
 }
 
 .now h2 {
-  font-size: 2.0rem; /* Reduced from 2.2rem to 2.0rem */
+  font-size: 1.8rem;
   font-weight: 700;
   color: #000;
   margin-bottom: 1em;
 }
 
 .now h3 {
-  font-size: 1.4rem; /* Reduced from 1.6rem to 1.4rem */
+  font-size: 1.3rem;
   font-weight: 700;
   color: #000;
   margin-bottom: 0.5em;
@@ -287,7 +287,7 @@ p {
 }
 
 .now h4 {
-  font-size: 1.2rem; /* Reduced from 1.4rem to 1.2rem */
+  font-size: 1.1rem;
   font-weight: 700;
   color: #0066cc;
   margin-bottom: 0.25em;
@@ -301,13 +301,13 @@ p {
 }
 
 .now li {
-  font-size: 1.3rem; /* Reduced from 1.5rem to 1.3rem to match body */
+  font-size: 1.2rem;
   color: #333;
   margin-bottom: 0.25em;
 }
 
 .now .last-updated {
-  font-size: 0.7rem; /* Reduced from 0.9rem to 0.7rem */
+  font-size: 0.6rem;
   color: #aaa;
   margin-top: 2em;
 }
@@ -327,12 +327,12 @@ p {
   }
 
   #header {
-    font-size: 1.4rem; /* Reduced from 1.6rem to 1.4rem */
+    font-size: 1.3rem;
     margin-bottom: 0.5em;
   }
 
   #header a:not(#logo) {
-    font-size: 0.9rem; /* Reduced from 1.0rem to 0.9rem */
+    font-size: 0.8rem;
     margin-right: 0.2em;
     display: block;
     margin-bottom: 0.5em;
@@ -340,7 +340,7 @@ p {
 
   #logo {
     margin-bottom: 0.5em;
-    font-size: 1.4rem; /* Match header size */
+    font-size: 1.3rem;
   }
 
   .blog-list {
@@ -350,20 +350,20 @@ p {
 
   .entryLink {
     margin-bottom: 1.5em;
-    font-size: 1.3rem; /* Match body size */
+    font-size: 1.2rem;
   }
 
   .small {
-    font-size: 1.2rem; /* Reduced from 1.4rem to 1.2rem */
+    font-size: 1.1rem;
     margin-bottom: 0.33em;
   }
 
   .lightText {
-    font-size: 1.2rem; /* Reduced from 1.4rem to 1.2rem */
+    font-size: 1.1rem;
   }
 
   .link {
-    font-size: 2.0rem !important; /* Reduced from 2.2rem to 2.0rem */
+    font-size: 1.8rem !important;
     line-height: 1.8;
     font-weight: 700 !important;
     font-family: var(--monospace);
@@ -372,7 +372,7 @@ p {
   }
 
   h1 {
-    font-size: 2.0rem !important;
+    font-size: 1.8rem !important;
     line-height: 1.8;
     font-weight: 700 !important;
     font-family: var(--monospace);
@@ -381,7 +381,7 @@ p {
   }
 
   p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.8;
   }
 
@@ -405,19 +405,19 @@ p {
   }
 
   .archives h2 {
-    font-size: 1.6rem; /* Reduced from 1.8rem to 1.6rem */
+    font-size: 1.5rem;
   }
 
   .archive-year-toggle {
-    font-size: 1.2rem; /* Reduced from 1.4rem to 1.2rem */
+    font-size: 1.1rem;
   }
 
   .month-title {
-    font-size: 1.0rem; /* Reduced from 1.2rem to 1.0rem */
+    font-size: 0.9rem;
   }
 
   .month-posts li {
-    font-size: 1.3rem; /* Reduced from 1.5rem to 1.3rem to match body */
+    font-size: 1.2rem;
   }
 
   .now {
@@ -426,22 +426,22 @@ p {
   }
 
   .now h2 {
-    font-size: 1.6rem; /* Reduced from 1.8rem to 1.6rem */
+    font-size: 1.5rem;
   }
 
   .now h3 {
-    font-size: 1.2rem; /* Reduced from 1.4rem to 1.2rem */
+    font-size: 1.1rem;
   }
 
   .now h4 {
-    font-size: 1.0rem; /* Reduced from 1.2rem to 1.0rem */
+    font-size: 0.9rem;
   }
 
   .now li {
-    font-size: 1.3rem; /* Reduced from 1.5rem to 1.3rem to match body */
+    font-size: 1.2rem;
   }
 
   .now .last-updated {
-    font-size: 0.6rem; /* Reduced from 0.7rem to 0.6rem */
+    font-size: 0.5rem;
   }
 }
