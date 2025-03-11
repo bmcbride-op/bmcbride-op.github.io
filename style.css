@@ -42,39 +42,39 @@ body {
 @media (prefers-color-scheme: dark) {
   body {
     background: #12262b;
-    color: #bedfe5;
+    color: #bedfe5 !important; /* Ensure color applies */
   }
 
   #header {
-    color: #bedfe5;
+    color: #bedfe5 !important;
   }
 
   #logo {
-    color: #bedfe5;
+    color: #bedfe5 !important;
   }
 
   #header a:not(#logo) {
-    color: #bedfe5;
+    color: #bedfe5 !important;
   }
 
   #header a:hover {
-    color: #d1e8f0;
+    color: #d1e8f0 !important;
   }
 
   .entryLink {
-    color: #bedfe5;
+    color: #bedfe5 !important;
   }
 
   .entryLink:hover {
-    color: #d1e8f0;
+    color: #d1e8f0 !important;
   }
 
   .small {
-    color: #bedfe5;
+    color: #bedfe5 !important;
   }
 
   .small:hover {
-    color: #d1e8f0;
+    color: #d1e8f0 !important;
   }
 
   .link {
@@ -82,11 +82,11 @@ body {
   }
 
   .lightText {
-    color: #bedfe5;
+    color: #bedfe5 !important;
   }
 
   .lightText:hover {
-    color: #d1e8f0;
+    color: #d1e8f0 !important;
   }
 
   h1 {
@@ -94,59 +94,59 @@ body {
   }
 
   p {
-    color: #bedfe5;
+    color: #bedfe5 !important;
   }
 
   .archives h2 {
-    color: #bedfe5;
+    color: #bedfe5 !important;
   }
 
   .archive-year-toggle {
-    color: #bedfe5;
+    color: #bedfe5 !important;
   }
 
   .archive-year-toggle:hover {
-    color: #d1e8f0;
+    color: #d1e8f0 !important;
   }
 
   .month-title {
-    color: #bedfe5;
+    color: #bedfe5 !important;
   }
 
   .month-title:hover {
-    color: #d1e8f0;
+    color: #d1e8f0 !important;
   }
 
   .month-posts li {
-    color: #bedfe5;
+    color: #bedfe5 !important;
   }
 
   .month-posts a {
-    color: #bedfe5;
+    color: #bedfe5 !important;
   }
 
   .month-posts a:hover {
-    color: #d1e8f0;
+    color: #d1e8f0 !important;
   }
 
   .now h2 {
-    color: #bedfe5;
+    color: #bedfe5 !important;
   }
 
   .now h3 {
-    color: #bedfe5;
+    color: #bedfe5 !important;
   }
 
   .now h4 {
-    color: #bedfe5;
+    color: #bedfe5 !important;
   }
 
   .now li {
-    color: #bedfe5;
+    color: #bedfe5 !important;
   }
 
   .now .last-updated {
-    color: #bedfe5;
+    color: #bedfe5 !important;
   }
 }
 
