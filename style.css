@@ -27,8 +27,8 @@ body {
   font-family: var(--monospace) !important;
   font-size: 1.2rem;
   line-height: 1.8;
-  color: #333;
-  background: #fafafa;
+  color: #003366; /* Changed from #333 to #003366 */
+  background: #fffefd; /* Changed from #fafafa to #fffefd */
   padding: 0;
   margin: 0;
   word-wrap: break-word;
@@ -58,6 +58,7 @@ body {
   font-size: 1.7rem;
   margin-bottom: 1em;
   max-width: 100%;
+  color: #003366; /* Changed from #000 */
 }
 
 #logo {
@@ -65,7 +66,7 @@ body {
   letter-spacing: 0.1em;
   font-weight: 700;
   display: block;
-  color: #000;
+  color: #003366; /* Changed from #000 */
   position: relative;
   margin-bottom: 0;
   font-size: 1.7rem;
@@ -77,11 +78,11 @@ body {
   margin-bottom: 0.2em;
   letter-spacing: 0.05em;
   text-decoration: none;
-  color: #aaa;
+  color: #003366; /* Changed from #aaa */
 }
 
 #header a:hover {
-  color: #468cc7;
+  color: #0055a4; /* Changed from #468cc7 to a lighter shade of #003366 */
 }
 
 .blog-list {
@@ -96,32 +97,32 @@ body {
   display: block;
   margin-bottom: 2em;
   text-decoration: none;
-  color: inherit;
+  color: #003366; /* Changed from inherit */
   white-space: normal;
   font-size: 1.2rem;
 }
 
 .entryLink:hover {
-  color: #468cc7;
+  color: #0055a4; /* Changed from #468cc7 */
 }
 
 .small {
   font-size: 1.0rem;
-  color: #aaa;
+  color: #003366; /* Changed from #aaa */
   text-decoration: none;
   display: block;
   margin-bottom: 0.33em;
 }
 
 .small:hover {
-  color: #468cc7;
+  color: #0055a4; /* Changed from #468cc7 */
 }
 
 .link {
   font-size: 1.8rem !important;
   line-height: 1.8;
   font-weight: 700 !important;
-  color: #000 !important;
+  color: #003366 !important; /* Changed from #000 */
   margin-bottom: 0.33em;
   display: block;
   font-family: var(--monospace);
@@ -131,19 +132,19 @@ body {
 
 .lightText {
   font-size: 1.1rem;
-  color: #aaa;
+  color: #003366; /* Changed from #aaa */
   text-decoration: none;
 }
 
 .lightText:hover {
-  color: #468cc7;
+  color: #0055a4; /* Changed from #468cc7 */
 }
 
 h1 {
   font-size: 1.8rem !important;
   line-height: 1.8;
   font-weight: 700 !important;
-  color: #000 !important;
+  color: #003366 !important; /* Changed from #000 */
   margin-bottom: 0.66em;
   font-family: var(--monospace);
   -webkit-font-smoothing: antialiased;
@@ -153,6 +154,7 @@ h1 {
 p {
   font-size: 1.2rem;
   line-height: 1.8;
+  color: #003366; /* Changed from #333 */
 }
 
 .blog-post {
@@ -184,7 +186,7 @@ p {
 .archives h2 {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #000;
+  color: #003366; /* Changed from #000 */
   margin-bottom: 1em;
 }
 
@@ -199,14 +201,14 @@ p {
 .archive-year-toggle {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #0066cc;
+  color: #003366; /* Changed from #0066cc */
   text-decoration: none;
   cursor: pointer;
   display: block;
 }
 
 .archive-year-toggle:hover {
-  color: #468cc7;
+  color: #0055a4; /* Changed from #468cc7 */
 }
 
 .archive-year-content {
@@ -225,14 +227,14 @@ p {
 .month-title {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #0066cc;
+  color: #003366; /* Changed from #0066cc */
   text-decoration: none;
   cursor: pointer;
   display: block;
 }
 
 .month-title:hover {
-  color: #468cc7;
+  color: #0055a4; /* Changed from #468cc7 */
 }
 
 .month-content {
@@ -251,17 +253,17 @@ p {
 
 .month-posts li {
   font-size: 1.2rem;
-  color: #333;
+  color: #003366; /* Changed from #333 */
   margin-bottom: 0.25em;
 }
 
 .month-posts a {
-  color: #333;
+  color: #003366; /* Changed from #333 */
   text-decoration: none;
 }
 
 .month-posts a:hover {
-  color: #468cc7;
+  color: #0055a4; /* Changed from #468cc7 */
 }
 
 /* Now Page Styling */
@@ -274,14 +276,14 @@ p {
 .now h2 {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #000;
+  color: #003366; /* Changed from #000 */
   margin-bottom: 1em;
 }
 
 .now h3 {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #000;
+  color: #003366; /* Changed from #000 */
   margin-bottom: 0.5em;
   margin-top: 1em;
 }
@@ -289,7 +291,7 @@ p {
 .now h4 {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #0066cc;
+  color: #003366; /* Changed from #0066cc */
   margin-bottom: 0.25em;
   margin-top: 0.5em;
 }
@@ -302,13 +304,13 @@ p {
 
 .now li {
   font-size: 1.2rem;
-  color: #333;
+  color: #003366; /* Changed from #333 */
   margin-bottom: 0.25em;
 }
 
 .now .last-updated {
   font-size: 0.6rem;
-  color: #aaa;
+  color: #003366; /* Changed from #aaa */
   margin-top: 2em;
 }
 
@@ -366,6 +368,7 @@ p {
     font-size: 1.8rem !important;
     line-height: 1.8;
     font-weight: 700 !important;
+    color: #003366 !important; /* Changed from #000 */
     font-family: var(--monospace);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -375,6 +378,7 @@ p {
     font-size: 1.8rem !important;
     line-height: 1.8;
     font-weight: 700 !important;
+    color: #003366 !important; /* Changed from #000 */
     font-family: var(--monospace);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
