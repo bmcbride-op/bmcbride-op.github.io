@@ -1,9 +1,10 @@
-/* Define Berkeley Mono font using .ttf */
+/* Define Berkeley Mono font using .ttf with debugging */
 @font-face {
   font-family: "Berkeley Mono";
   src: url("/fonts/TX-02-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap; /* Improve font loading behavior */
 }
 
 @font-face {
@@ -11,10 +12,24 @@
   src: url("/fonts/TX-02-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 :root {
   --monospace: "Berkeley Mono", "Courier New", Courier, monospace; /* Use Berkeley Mono */
+}
+
+/* Temporary debug rule to check font loading */
+body::after {
+  content: "Font Test: " attr(font-family);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-size: 12px;
+  color: #000;
+  background: #fff;
+  z-index: 1000;
+  display: none; /* Remove this line after testing */
 }
 
 html {
