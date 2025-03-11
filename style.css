@@ -149,7 +149,7 @@ p {
   object-fit: contain;
 }
 
-/* Archives Styling */
+/* Archives Styling with Expand/Collapse */
 .archives {
   max-width: 500px;
   margin: 0 auto;
@@ -167,11 +167,29 @@ p {
   margin-bottom: 1em;
 }
 
-.archive-year h3 {
+.archive-toggle {
+  display: none; /* Hide checkboxes */
+}
+
+.archive-year-toggle {
   font-size: 18px;
   font-weight: 700;
-  color: #000;
-  margin-bottom: 0.5em;
+  color: #0066cc;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+}
+
+.archive-year-toggle:hover {
+  color: #468cc7;
+}
+
+.archive-year-content {
+  display: none;
+}
+
+.archive-toggle:checked + .archive-year-toggle + .archive-year-content {
+  display: block;
 }
 
 .archive-month {
@@ -179,11 +197,25 @@ p {
   padding-left: 1em;
 }
 
-.archive-month h4 {
+.month-title {
   font-size: 16px;
   font-weight: 700;
   color: #0066cc;
-  margin-bottom: 0.25em;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+}
+
+.month-title:hover {
+  color: #468cc7;
+}
+
+.month-content {
+  display: none;
+}
+
+.archive-toggle:checked + .month-title + .month-content {
+  display: block;
 }
 
 .month-posts {
@@ -298,11 +330,11 @@ p {
     font-size: 20px;
   }
 
-  .archive-year h3 {
+  .archive-year-toggle {
     font-size: 16px;
   }
 
-  .archive-month h4 {
+  .month-title {
     font-size: 14px;
   }
 
