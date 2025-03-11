@@ -54,11 +54,11 @@ body {
   margin-bottom: 0.2em;
   letter-spacing: 0.05em;
   text-decoration: none;
-  color: #0066cc;
+  color: #aaa; /* Changed from #0066cc to #aaa to match date grey */
 }
 
 #header a:hover {
-  color: #468cc7;
+  color: #468cc7; /* Kept hover effect */
 }
 
 .blog-list {
