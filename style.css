@@ -1,421 +1,445 @@
+/* Define Berkeley Mono font using .ttf */
+@font-face {
+  font-family: "Berkeley Mono";
+  src: url("/fonts/TX-02-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Berkeley Mono";
+  src: url("/fonts/TX-02-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --monospace: "Berkeley Mono", "Courier New", Courier, monospace; /* Use Berkeley Mono */
+}
+
 html {
-overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 body {
-font-family: "Times New Roman", Times, serif;
-line-height: 150%;
-color: #333;
-background: #fafafa;
-padding: 0;
-margin: 0;
-word-wrap: break-word;
-overflow-wrap: break-word;
-overflow-x: hidden;
--webkit-overflow-scrolling: touch;
+  font-family: var(--monospace);
+  font-size: 1.7rem;
+  line-height: 1.8;
+  color: #333;
+  background: #fafafa;
+  padding: 0;
+  margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 .site-wrapper {
-overflow-x: hidden;
-width: 100%;
-min-height: 100vh;
-box-sizing: border-box;
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
 .container {
-width: 90%;
-max-width: 600px;
-margin: 0 auto;
-position: relative;
-box-sizing: border-box;
-overflow-x: hidden;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 #header {
-text-align: center;
-font-size: 22px;
-margin-bottom: 1em;
-max-width: 100%;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 1em;
+  max-width: 100%;
 }
 
 #logo {
-text-transform: uppercase;
-letter-spacing: 0.1em;
-font-weight: 700;
-display: block;
-color: #000;
-position: relative;
-margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  display: block;
+  color: #000;
+  position: relative;
+  margin-bottom: 0;
+  font-size: 2.2rem;
 }
 
 #header a:not(#logo) {
-font-size: 14px;
-margin-right: 0.4em;
-margin-bottom: 0.2em;
-letter-spacing: 0.05em;
-text-decoration: none;
-color: #aaa; /* Matches date grey */
+  font-size: 1.4rem;
+  margin-right: 0.4em;
+  margin-bottom: 0.2em;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  color: #aaa;
 }
 
 #header a:hover {
-color: #468cc7;
+  color: #468cc7;
 }
 
 .blog-list {
-max-width: 500px;
-margin: 0 auto;
-text-align: left;
-box-sizing: border-box;
-overflow-x: hidden;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .entryLink {
-display: block;
-margin-bottom: 2em;
-text-decoration: none;
-color: inherit;
-white-space: normal;
+  display: block;
+  margin-bottom: 2em;
+  text-decoration: none;
+  color: inherit;
+  white-space: normal;
+  font-size: 1.7rem;
 }
 
 .entryLink:hover {
-color: #468cc7;
+  color: #468cc7;
 }
 
 .small {
-font-size: 14px;
-color: #aaa;
-text-decoration: none;
-display: block;
-margin-bottom: 0.33em;
+  font-size: 1.4rem;
+  color: #aaa;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.33em;
 }
 
 .small:hover {
-color: #468cc7;
+  color: #468cc7;
 }
 
 .link {
-font-size: 24px !important;
-line-height: 30px !important;
-font-weight: 700 !important;
-color: #000 !important;
-margin-bottom: 0.33em;
-display: block;
-font-family: "Times New Roman", Times, serif;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
+  font-size: 2.4rem !important;
+  line-height: 1.8;
+  font-weight: 700 !important;
+  color: #000 !important;
+  margin-bottom: 0.33em;
+  display: block;
+  font-family: var(--monospace);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .lightText {
-font-size: 16px;
-color: #aaa;
-text-decoration: none;
+  font-size: 1.6rem;
+  color: #aaa;
+  text-decoration: none;
 }
 
 .lightText:hover {
-color: #468cc7;
+  color: #468cc7;
 }
 
 h1 {
-font-size: 24px !important;
-line-height: 30px !important;
-font-weight: 700 !important;
-color: #000 !important;
-margin-bottom: 0.66em;
-font-family: "Times New Roman", Times, serif;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
+  font-size: 2.4rem !important;
+  line-height: 1.8;
+  font-weight: 700 !important;
+  color: #000 !important;
+  margin-bottom: 0.66em;
+  font-family: var(--monospace);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 p {
-font-size: 18px;
-line-height: 26px;
+  font-size: 1.7rem;
+  line-height: 1.8;
 }
 
 .blog-post {
-max-width: 500px;
-margin: 0 auto;
-text-align: left;
-word-wrap: break-word;
-box-sizing: border-box;
-overflow-x: hidden;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .blog-post img,
 .post-image {
-max-width: 400px !important;
-width: 100%;
-height: auto;
-display: block;
-margin: 1em auto;
-object-fit: contain;
+  max-width: 400px !important;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+  object-fit: contain;
 }
 
 /* Archives Styling with Expand/Collapse */
 .archives {
-max-width: 500px;
-margin: 0 auto;
-text-align: left;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .archives h2 {
-font-size: 24px;
-font-weight: 700;
-color: #000;
-margin-bottom: 1em;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1em;
 }
 
 .archive-year {
-margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .archive-toggle {
-display: none; /* Hide checkboxes */
+  display: none; /* Hide checkboxes */
 }
 
 .archive-year-toggle {
-font-size: 18px;
-font-weight: 700;
-color: #0066cc;
-text-decoration: none;
-cursor: pointer;
-display: block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0066cc;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
 }
 
 .archive-year-toggle:hover {
-color: #468cc7;
+  color: #468cc7;
 }
 
 .archive-year-content {
-display: none;
+  display: none;
 }
 
 .archive-toggle:checked + .archive-year-toggle + .archive-year-content {
-display: block;
+  display: block;
 }
 
 .archive-month {
-margin-bottom: 0.5em;
-padding-left: 1em;
+  margin-bottom: 0.5em;
+  padding-left: 1em;
 }
 
 .month-title {
-font-size: 16px;
-font-weight: 700;
-color: #0066cc;
-text-decoration: none;
-cursor: pointer;
-display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #0066cc;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
 }
 
 .month-title:hover {
-color: #468cc7;
+  color: #468cc7;
 }
 
 .month-content {
-display: none;
+  display: none;
 }
 
 .archive-toggle:checked + .month-title + .month-content {
-display: block;
+  display: block;
 }
 
 .month-posts {
-list-style: none;
-padding-left: 1em;
-margin: 0;
+  list-style: none;
+  padding-left: 1em;
+  margin: 0;
 }
 
 .month-posts li {
-font-size: 14px;
-color: #333;
-margin-bottom: 0.25em;
+  font-size: 1.7rem;
+  color: #333;
+  margin-bottom: 0.25em;
 }
 
 .month-posts a {
-color: #333;
-text-decoration: none;
+  color: #333;
+  text-decoration: none;
 }
 
 .month-posts a:hover {
-color: #468cc7;
+  color: #468cc7;
 }
 
 /* Now Page Styling */
 .now {
-max-width: 500px;
-margin: 0 auto;
-text-align: left;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .now h2 {
-font-size: 24px;
-font-weight: 700;
-color: #000;
-margin-bottom: 1em;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1em;
 }
 
 .now h3 {
-font-size: 18px;
-font-weight: 700;
-color: #000;
-margin-bottom: 0.5em;
-margin-top: 1em;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
 }
 
 .now h4 {
-font-size: 16px;
-font-weight: 700;
-color: #0066cc;
-margin-bottom: 0.25em;
-margin-top: 0.5em;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #0066cc;
+  margin-bottom: 0.25em;
+  margin-top: 0.5em;
 }
 
 .now ul {
-list-style: disc;
-padding-left: 1.5em;
-margin: 0 0 1em 0;
+  list-style: disc;
+  padding-left: 1.5em;
+  margin: 0 0 1em 0;
 }
 
 .now li {
-font-size: 14px;
-color: #333;
-margin-bottom: 0.25em;
+  font-size: 1.7rem;
+  color: #333;
+  margin-bottom: 0.25em;
 }
 
 .now .last-updated {
-font-size: 10px; /* Reduced from 14px to 10px for a lot smaller text */
-color: #aaa;
-margin-top: 2em;
+  font-size: 1.0rem;
+  color: #aaa;
+  margin-top: 2em;
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 600px) {
-html,
-body,
-.site-wrapper {
-overflow-x: hidden;
-}
+  html,
+  body,
+  .site-wrapper {
+    overflow-x: hidden;
+  }
 
-.container {
-padding: 0 10px;
-width: 100%;
-max-width: 100%;
-}
+  .container {
+    padding: 0 10px;
+    width: 100%;
+    max-width: 100%;
+  }
 
-#header {
-font-size: 18px;
-margin-bottom: 0.5em;
-}
+  #header {
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
 
-#header a:not(#logo) {
-font-size: 12px;
-margin-right: 0.2em;
-display: block;
-margin-bottom: 0.5em;
-}
+  #header a:not(#logo) {
+    font-size: 1.2rem;
+    margin-right: 0.2em;
+    display: block;
+    margin-bottom: 0.5em;
+  }
 
-#logo {
-margin-bottom: 0.5em;
-}
+  #logo {
+    margin-bottom: 0.5em;
+    font-size: 1.8rem;
+  }
 
-.blog-list {
-max-width: 100%;
-padding: 0 10px;
-}
+  .blog-list {
+    max-width: 100%;
+    padding: 0 10px;
+  }
 
-.entryLink {
-margin-bottom: 1.5em;
-}
+  .entryLink {
+    margin-bottom: 1.5em;
+    font-size: 1.7rem;
+  }
 
-.small {
-font-size: 16px;
-margin-bottom: 0.33em;
-}
+  .small {
+    font-size: 1.6rem;
+    margin-bottom: 0.33em;
+  }
 
-.lightText {
-font-size: 16px;
-}
+  .lightText {
+    font-size: 1.6rem;
+  }
 
-.link {
-font-size: 24px !important;
-line-height: 30px !important;
-font-weight: 700 !important;
-font-family: "Times New Roman", Times, serif;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-}
+  .link {
+    font-size: 2.4rem !important;
+    line-height: 1.8;
+    font-weight: 700 !important;
+    font-family: var(--monospace);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-h1 {
-font-size: 24px !important;
-line-height: 30px !important;
-font-weight: 700 !important;
-font-family: "Times New Roman", Times, serif;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-}
+  h1 {
+    font-size: 2.4rem !important;
+    line-height: 1.8;
+    font-weight: 700 !important;
+    font-family: var(--monospace);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-p {
-font-size: 18px;
-line-height: 26px;
-}
+  p {
+    font-size: 1.7rem;
+    line-height: 1.8;
+  }
 
-.blog-post {
-max-width: 100%;
-padding: 0 10px;
-}
+  .blog-post {
+    max-width: 100%;
+    padding: 0 10px;
+  }
 
-.blog-post img,
-.post-image {
-max-width: 90% !important;
-width: 100%;
-height: auto;
-margin: 0.5em auto;
-object-fit: contain;
-}
+  .blog-post img,
+  .post-image {
+    max-width: 90% !important;
+    width: 100%;
+    height: auto;
+    margin: 0.5em auto;
+    object-fit: contain;
+  }
 
-.archives {
-max-width: 100%;
-padding: 0 10px;
-}
+  .archives {
+    max-width: 100%;
+    padding: 0 10px;
+  }
 
-.archives h2 {
-font-size: 20px;
-}
+  .archives h2 {
+    font-size: 2.0rem;
+  }
 
-.archive-year-toggle {
-font-size: 16px;
-}
+  .archive-year-toggle {
+    font-size: 1.6rem;
+  }
 
-.month-title {
-font-size: 14px;
-}
+  .month-title {
+    font-size: 1.4rem;
+  }
 
-.month-posts li {
-font-size: 12px;
-}
+  .month-posts li {
+    font-size: 1.7rem;
+  }
 
-.now {
-max-width: 100%;
-padding: 0 10px;
-}
+  .now {
+    max-width: 100%;
+    padding: 0 10px;
+  }
 
-.now h2 {
-font-size: 20px;
-}
+  .now h2 {
+    font-size: 2.0rem;
+  }
 
-.now h3 {
-font-size: 16px;
-}
+  .now h3 {
+    font-size: 1.6rem;
+  }
 
-.now h4 {
-font-size: 14px;
-}
+  .now h4 {
+    font-size: 1.4rem;
+  }
 
-.now li {
-font-size: 12px;
-}
+  .now li {
+    font-size: 1.7rem;
+  }
 
-.now .last-updated {
-font-size: 8px; /* Reduced from 12px to 8px for mobile to maintain proportionality */
-}
+  .now .last-updated {
+    font-size: 0.8rem;
+  }
 }
