@@ -27,14 +27,237 @@ body {
   font-family: var(--monospace) !important;
   font-size: 1.2rem;
   line-height: 1.8;
-  color: #003366; /* Changed from #333 to #003366 */
-  background: #fffefd; /* Changed from #fafafa to #fffefd */
+  color: #003366;
+  background: #fffefd;
   padding: 0;
   margin: 0;
   word-wrap: break-word;
   overflow-wrap: break-word;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
+  transition: background 0.3s, color 0.3s; /* Smooth transition for mode switch */
+}
+
+/* Dark mode for system preference */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #12262b;
+    color: #bedfe5;
+  }
+
+  #header {
+    color: #bedfe5;
+  }
+
+  #logo {
+    color: #bedfe5;
+  }
+
+  #header a:not(#logo) {
+    color: #bedfe5;
+  }
+
+  #header a:hover {
+    color: #d1e8f0;
+  }
+
+  .entryLink {
+    color: #bedfe5;
+  }
+
+  .entryLink:hover {
+    color: #d1e8f0;
+  }
+
+  .small {
+    color: #bedfe5;
+  }
+
+  .small:hover {
+    color: #d1e8f0;
+  }
+
+  .link {
+    color: #bedfe5 !important;
+  }
+
+  .lightText {
+    color: #bedfe5;
+  }
+
+  .lightText:hover {
+    color: #d1e8f0;
+  }
+
+  h1 {
+    color: #bedfe5 !important;
+  }
+
+  p {
+    color: #bedfe5;
+  }
+
+  .archives h2 {
+    color: #bedfe5;
+  }
+
+  .archive-year-toggle {
+    color: #bedfe5;
+  }
+
+  .archive-year-toggle:hover {
+    color: #d1e8f0;
+  }
+
+  .month-title {
+    color: #bedfe5;
+  }
+
+  .month-title:hover {
+    color: #d1e8f0;
+  }
+
+  .month-posts li {
+    color: #bedfe5;
+  }
+
+  .month-posts a {
+    color: #bedfe5;
+  }
+
+  .month-posts a:hover {
+    color: #d1e8f0;
+  }
+
+  .now h2 {
+    color: #bedfe5;
+  }
+
+  .now h3 {
+    color: #bedfe5;
+  }
+
+  .now h4 {
+    color: #bedfe5;
+  }
+
+  .now li {
+    color: #bedfe5;
+  }
+
+  .now .last-updated {
+    color: #bedfe5;
+  }
+}
+
+/* Custom dark mode toggle */
+.dark-mode {
+  background: #12262b;
+  color: #bedfe5;
+}
+
+.dark-mode #header {
+  color: #bedfe5;
+}
+
+.dark-mode #logo {
+  color: #bedfe5;
+}
+
+.dark-mode #header a:not(#logo) {
+  color: #bedfe5;
+}
+
+.dark-mode #header a:hover {
+  color: #d1e8f0;
+}
+
+.dark-mode .entryLink {
+  color: #bedfe5;
+}
+
+.dark-mode .entryLink:hover {
+  color: #d1e8f0;
+}
+
+.dark-mode .small {
+  color: #bedfe5;
+}
+
+.dark-mode .small:hover {
+  color: #d1e8f0;
+}
+
+.dark-mode .link {
+  color: #bedfe5 !important;
+}
+
+.dark-mode .lightText {
+  color: #bedfe5;
+}
+
+.dark-mode .lightText:hover {
+  color: #d1e8f0;
+}
+
+.dark-mode h1 {
+  color: #bedfe5 !important;
+}
+
+.dark-mode p {
+  color: #bedfe5;
+}
+
+.dark-mode .archives h2 {
+  color: #bedfe5;
+}
+
+.dark-mode .archive-year-toggle {
+  color: #bedfe5;
+}
+
+.dark-mode .archive-year-toggle:hover {
+  color: #d1e8f0;
+}
+
+.dark-mode .month-title {
+  color: #bedfe5;
+}
+
+.dark-mode .month-title:hover {
+  color: #d1e8f0;
+}
+
+.dark-mode .month-posts li {
+  color: #bedfe5;
+}
+
+.dark-mode .month-posts a {
+  color: #bedfe5;
+}
+
+.dark-mode .month-posts a:hover {
+  color: #d1e8f0;
+}
+
+.dark-mode .now h2 {
+  color: #bedfe5;
+}
+
+.dark-mode .now h3 {
+  color: #bedfe5;
+}
+
+.dark-mode .now h4 {
+  color: #bedfe5;
+}
+
+.dark-mode .now li {
+  color: #bedfe5;
+}
+
+.dark-mode .now .last-updated {
+  color: #bedfe5;
 }
 
 .site-wrapper {
@@ -58,7 +281,6 @@ body {
   font-size: 1.7rem;
   margin-bottom: 1em;
   max-width: 100%;
-  color: #003366; /* Changed from #000 */
 }
 
 #logo {
@@ -66,7 +288,7 @@ body {
   letter-spacing: 0.1em;
   font-weight: 700;
   display: block;
-  color: #003366; /* Changed from #000 */
+  color: #003366;
   position: relative;
   margin-bottom: 0;
   font-size: 1.7rem;
@@ -78,11 +300,11 @@ body {
   margin-bottom: 0.2em;
   letter-spacing: 0.05em;
   text-decoration: none;
-  color: #003366; /* Changed from #aaa */
+  color: #003366;
 }
 
 #header a:hover {
-  color: #0055a4; /* Changed from #468cc7 to a lighter shade of #003366 */
+  color: #0055a4;
 }
 
 .blog-list {
@@ -97,32 +319,32 @@ body {
   display: block;
   margin-bottom: 2em;
   text-decoration: none;
-  color: #003366; /* Changed from inherit */
+  color: #003366;
   white-space: normal;
   font-size: 1.2rem;
 }
 
 .entryLink:hover {
-  color: #0055a4; /* Changed from #468cc7 */
+  color: #0055a4;
 }
 
 .small {
   font-size: 1.0rem;
-  color: #003366; /* Changed from #aaa */
+  color: #003366;
   text-decoration: none;
   display: block;
   margin-bottom: 0.33em;
 }
 
 .small:hover {
-  color: #0055a4; /* Changed from #468cc7 */
+  color: #0055a4;
 }
 
 .link {
   font-size: 1.8rem !important;
   line-height: 1.8;
   font-weight: 700 !important;
-  color: #003366 !important; /* Changed from #000 */
+  color: #003366 !important;
   margin-bottom: 0.33em;
   display: block;
   font-family: var(--monospace);
@@ -132,19 +354,19 @@ body {
 
 .lightText {
   font-size: 1.1rem;
-  color: #003366; /* Changed from #aaa */
+  color: #003366;
   text-decoration: none;
 }
 
 .lightText:hover {
-  color: #0055a4; /* Changed from #468cc7 */
+  color: #0055a4;
 }
 
 h1 {
   font-size: 1.8rem !important;
   line-height: 1.8;
   font-weight: 700 !important;
-  color: #003366 !important; /* Changed from #000 */
+  color: #003366 !important;
   margin-bottom: 0.66em;
   font-family: var(--monospace);
   -webkit-font-smoothing: antialiased;
@@ -154,7 +376,7 @@ h1 {
 p {
   font-size: 1.2rem;
   line-height: 1.8;
-  color: #003366; /* Changed from #333 */
+  color: #003366;
 }
 
 .blog-post {
@@ -186,7 +408,7 @@ p {
 .archives h2 {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #003366; /* Changed from #000 */
+  color: #003366;
   margin-bottom: 1em;
 }
 
@@ -201,14 +423,14 @@ p {
 .archive-year-toggle {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #003366; /* Changed from #0066cc */
+  color: #003366;
   text-decoration: none;
   cursor: pointer;
   display: block;
 }
 
 .archive-year-toggle:hover {
-  color: #0055a4; /* Changed from #468cc7 */
+  color: #0055a4;
 }
 
 .archive-year-content {
@@ -227,14 +449,14 @@ p {
 .month-title {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #003366; /* Changed from #0066cc */
+  color: #003366;
   text-decoration: none;
   cursor: pointer;
   display: block;
 }
 
 .month-title:hover {
-  color: #0055a4; /* Changed from #468cc7 */
+  color: #0055a4;
 }
 
 .month-content {
@@ -253,17 +475,17 @@ p {
 
 .month-posts li {
   font-size: 1.2rem;
-  color: #003366; /* Changed from #333 */
+  color: #003366;
   margin-bottom: 0.25em;
 }
 
 .month-posts a {
-  color: #003366; /* Changed from #333 */
+  color: #003366;
   text-decoration: none;
 }
 
 .month-posts a:hover {
-  color: #0055a4; /* Changed from #468cc7 */
+  color: #0055a4;
 }
 
 /* Now Page Styling */
@@ -276,14 +498,14 @@ p {
 .now h2 {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #003366; /* Changed from #000 */
+  color: #003366;
   margin-bottom: 1em;
 }
 
 .now h3 {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #003366; /* Changed from #000 */
+  color: #003366;
   margin-bottom: 0.5em;
   margin-top: 1em;
 }
@@ -291,7 +513,7 @@ p {
 .now h4 {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #003366; /* Changed from #0066cc */
+  color: #003366;
   margin-bottom: 0.25em;
   margin-top: 0.5em;
 }
@@ -304,13 +526,13 @@ p {
 
 .now li {
   font-size: 1.2rem;
-  color: #003366; /* Changed from #333 */
+  color: #003366;
   margin-bottom: 0.25em;
 }
 
 .now .last-updated {
   font-size: 0.6rem;
-  color: #003366; /* Changed from #aaa */
+  color: #003366;
   margin-top: 2em;
 }
 
@@ -368,7 +590,7 @@ p {
     font-size: 1.8rem !important;
     line-height: 1.8;
     font-weight: 700 !important;
-    color: #003366 !important; /* Changed from #000 */
+    color: #003366 !important;
     font-family: var(--monospace);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -378,7 +600,7 @@ p {
     font-size: 1.8rem !important;
     line-height: 1.8;
     font-weight: 700 !important;
-    color: #003366 !important; /* Changed from #000 */
+    color: #003366 !important;
     font-family: var(--monospace);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
