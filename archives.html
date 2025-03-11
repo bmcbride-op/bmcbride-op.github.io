@@ -23,7 +23,7 @@ title: Archives
         <label for="year-{{ post_year }}" class="archive-year-toggle">{{ post_year }}
         </label>
         <div class="archive-year-content">
-        {% assign current_year = post_year %}
+          {% assign current_year = post_year %}
     {% endif %}
     {% if post_month != current_month %}
       {% if current_month != "" %}
@@ -36,9 +36,9 @@ title: Archives
         <label for="month-{{ post_year }}-{{ post_month | slugify }}" class="month-title">{{ post_month }}</label>
         <div class="month-content">
           <ul class="month-posts">
-          {% assign current_month = post_month %}
+            {% assign current_month = post_month %}
     {% endif %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%m.%d" }}</li>
+    <li><a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%m.%d" }}</a></li>
   {% endfor %}
   {% if sorted_posts.size > 0 %}
     </ul>
@@ -48,3 +48,5 @@ title: Archives
     </div> <!-- Close archive-year -->
   {% endif %}
 </div>
+
+
