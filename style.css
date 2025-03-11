@@ -240,6 +240,54 @@ p {
   color: #468cc7;
 }
 
+/* Now Page Styling */
+.now {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.now h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1em;
+}
+
+.now h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+.now h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0066cc;
+  margin-bottom: 0.25em;
+  margin-top: 0.5em;
+}
+
+.now ul {
+  list-style: disc;
+  padding-left: 1.5em;
+  margin: 0 0 1em 0;
+}
+
+.now li {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 0.25em;
+}
+
+.now .last-updated {
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 2em;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 600px) {
   html,
@@ -343,6 +391,31 @@ p {
   }
 
   .month-posts li {
+    font-size: 12px;
+  }
+
+  .now {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .now h2 {
+    font-size: 20px;
+  }
+
+  .now h3 {
+    font-size: 16px;
+  }
+
+  .now h4 {
+    font-size: 14px;
+  }
+
+  .now li {
+    font-size: 12px;
+  }
+
+  .now .last-updated {
     font-size: 12px;
   }
 }
