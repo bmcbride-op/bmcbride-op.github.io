@@ -4,7 +4,7 @@ title: Full Steam Ahead (20 Year Anniversary)
 date: 2025-03-11
 ---
 
-![20 Years of Steam](/images/steam_20_years)
+![20 Years of Steam](/images/steam_20_years.jpg)
 
 Today dawns with a quiet weight for me, a milestone _20 years_ in the crafting. On March 11, 2005, I plunged into a journey that reshaped how I live and breathe video games. That was the day the haunting streets of City 17 unfolded before me in Half-Life 2, a game that still claims a top spot in my heart. The oppressive air, the gravity gun’s hum, the visuals and story that somehow hold up—it gripped me tight and never let go. Yet, as much as I could linger on Half-Life 2’s brilliance, that’s not what I’m here to honor. It’s Steam, the unassuming companion that tagged along. Back in 2005, Steam was no titan—just a scrappy little gatekeeper, ensuring your big-box PC game was legit and slipping Valve patches through without forcing you to trawl the internet’s shadier corners.
 
