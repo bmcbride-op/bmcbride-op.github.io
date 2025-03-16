@@ -41,7 +41,7 @@ body {
 /* Global link styles to override default colors */
 a {
   color: #003366 !important;
-  text-decoration: none;
+  text-decoration: none !important; /* Reinforce no underline globally */
   transition: all 0.2s ease;
 }
 
@@ -49,13 +49,13 @@ a:visited {
   color: #003366 !important;
 }
 
-/* Header-specific link styles with highlight and underline effect */
+/* Header-specific link styles with highlight effect (no underline) */
 #header a:not(#logo) {
   font-size: 1.0rem;
   margin-right: 0.4em;
   margin-bottom: 0.2em;
   letter-spacing: 0.05em;
-  text-decoration: underline;
+  text-decoration: none; /* Remove underline */
   color: #003366;
   display: inline-block;
 }
@@ -67,6 +67,7 @@ a:visited {
   color: #fffefd;
   background: #003366;
   outline: none;
+  text-decoration: none; /* Ensure no underline on hover/focus */
 }
 
 /* Blog list links (no underline, color change only) */
@@ -108,7 +109,7 @@ a:visited {
   color: #003366;
 }
 
-/* Archive links with highlight and underline effect */
+/* Archive links with highlight effect */
 .archive-year-toggle {
   font-size: 1.3rem;
   font-weight: 700;
@@ -157,7 +158,7 @@ a:visited {
   background: #003366;
 }
 
-/* Search results links with highlight and underline effect */
+/* Search results links with highlight effect */
 .search-results a {
   display: block;
   margin-bottom: 0.5em;
@@ -174,7 +175,7 @@ a:visited {
   background: #003366;
 }
 
-/* Audio toggle link with highlight and underline effect */
+/* Audio toggle link with highlight effect */
 .audio-toggle {
   display: block;
   font-family: var(--monospace);
@@ -219,7 +220,7 @@ a:visited {
 
   #header a:not(#logo) {
     color: #bedfe5 !important;
-    text-decoration: underline;
+    text-decoration: none; /* Remove underline in dark mode */
   }
 
   #header a:not(#logo):hover,
@@ -228,6 +229,7 @@ a:visited {
     border: 1px solid #bedfe5 !important;
     color: #12262b !important;
     background: #bedfe5 !important;
+    text-decoration: none; /* Ensure no underline on hover/focus */
   }
 
   .entryLink {
