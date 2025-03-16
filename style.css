@@ -64,7 +64,7 @@ a:visited {
 #header a:not(#logo):focus {
   padding: 0.1em 0.3em;
   border: 1px solid #003366;
-  color: #fffefd;
+  color: #003366; /* Match text color to background color of highlight box */
   background: #003366;
   outline: none;
   text-decoration: none; /* Ensure no underline on hover/focus */
@@ -227,7 +227,7 @@ a:visited {
   #header a:not(#logo):focus {
     padding: 0.1em 0.3em;
     border: 1px solid #bedfe5 !important;
-    color: #12262b !important;
+    color: #bedfe5 !important; /* Match text color to background color of highlight box */
     background: #bedfe5 !important;
     text-decoration: none; /* Ensure no underline on hover/focus */
   }
@@ -354,7 +354,7 @@ a:visited {
 
   /* Explicitly target blog post title to match other text color */
   .blog-post h1 {
-    color: #bedfe5 !important;
+    color: #bedfe5 !important; /* Match the light blue color in dark mode */
   }
 }
 
