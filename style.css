@@ -38,18 +38,25 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
-/* General link styles */
+/* Global link styles to override default colors */
 a {
-  color: #003366;
+  color: #003366 !important; /* Force light mode color */
   text-decoration: none;
+  display: inline-block; /* Ensure padding and border work */
   transition: all 0.2s ease; /* Smooth transition for hover effect */
 }
 
-a:hover {
-  padding: 0.1em 0.3em; /* Add padding to create the "box" */
-  border: 1px solid #003366; /* Border matches text color */
-  color: #fffefd; /* Text changes to background color */
-  background: #003366; /* Background matches text color for the "box" */
+a:visited {
+  color: #003366 !important; /* Remove purple visited color */
+}
+
+a:hover,
+a:focus {
+  padding: 0.1em 0.3em !important; /* Add padding to create the "box" */
+  border: 1px solid #003366 !important; /* Border matches text color */
+  color: #fffefd !important; /* Text changes to background color */
+  background: #003366 !important; /* Background matches text color for the "box" */
+  outline: none; /* Remove default focus outline if desired */
 }
 
 /* Header-specific link styles */
@@ -62,7 +69,8 @@ a:hover {
   color: #003366;
 }
 
-#header a:not(#logo):hover {
+#header a:not(#logo):hover,
+#header a:not(#logo):focus {
   padding: 0.1em 0.3em;
   border: 1px solid #003366;
   color: #fffefd;
@@ -78,7 +86,8 @@ a:hover {
   font-size: 1.2rem;
 }
 
-.entryLink:hover {
+.entryLink:hover,
+.entryLink:focus {
   padding: 0.1em 0.3em;
   border: 1px solid #003366;
   color: #fffefd;
@@ -93,7 +102,8 @@ a:hover {
   margin-bottom: 0.33em;
 }
 
-.small:hover {
+.small:hover,
+.small:focus {
   padding: 0.1em 0.3em;
   border: 1px solid #003366;
   color: #fffefd;
@@ -106,7 +116,8 @@ a:hover {
   text-decoration: none;
 }
 
-.lightText:hover {
+.lightText:hover,
+.lightText:focus {
   padding: 0.1em 0.3em;
   border: 1px solid #003366;
   color: #fffefd;
@@ -122,7 +133,8 @@ a:hover {
   display: block;
 }
 
-.archive-year-toggle:hover {
+.archive-year-toggle:hover,
+.archive-year-toggle:focus {
   padding: 0.1em 0.3em;
   border: 1px solid #003366;
   color: #fffefd;
@@ -138,7 +150,8 @@ a:hover {
   display: block;
 }
 
-.month-title:hover {
+.month-title:hover,
+.month-title:focus {
   padding: 0.1em 0.3em;
   border: 1px solid #003366;
   color: #fffefd;
@@ -150,7 +163,8 @@ a:hover {
   text-decoration: none;
 }
 
-.month-posts a:hover {
+.month-posts a:hover,
+.month-posts a:focus {
   padding: 0.1em 0.3em;
   border: 1px solid #003366;
   color: #fffefd;
@@ -164,14 +178,14 @@ a:hover {
   text-decoration: none;
 }
 
-.search-results a:hover {
+.search-results a:hover,
+.search-results a:focus {
   padding: 0.1em 0.3em;
   border: 1px solid #003366;
   color: #fffefd;
   background: #003366;
 }
 
-/* Audio toggle link */
 .audio-toggle {
   display: block;
   font-family: var(--monospace);
@@ -182,7 +196,8 @@ a:hover {
   text-decoration: none;
 }
 
-.audio-toggle:hover {
+.audio-toggle:hover,
+.audio-toggle:focus {
   padding: 0.1em 0.3em;
   border: 1px solid #003366;
   color: #fffefd;
@@ -200,11 +215,17 @@ a:hover {
     color: #bedfe5 !important;
   }
 
-  a:hover {
-    padding: 0.1em 0.3em;
-    border: 1px solid #bedfe5 !important; /* Border matches dark mode text color */
-    color: #12262b !important; /* Text changes to dark mode background color */
-    background: #bedfe5 !important; /* Background matches dark mode text color */
+  a:visited {
+    color: #bedfe5 !important; /* Remove purple visited color in dark mode */
+  }
+
+  a:hover,
+  a:focus {
+    padding: 0.1em 0.3em !important;
+    border: 1px solid #bedfe5 !important;
+    color: #12262b !important;
+    background: #bedfe5 !important;
+    outline: none;
   }
 
   #header {
@@ -219,7 +240,8 @@ a:hover {
     color: #bedfe5 !important;
   }
 
-  #header a:not(#logo):hover {
+  #header a:not(#logo):hover,
+  #header a:not(#logo):focus {
     padding: 0.1em 0.3em;
     border: 1px solid #bedfe5 !important;
     color: #12262b !important;
@@ -230,7 +252,8 @@ a:hover {
     color: #bedfe5 !important;
   }
 
-  .entryLink:hover {
+  .entryLink:hover,
+  .entryLink:focus {
     padding: 0.1em 0.3em;
     border: 1px solid #bedfe5 !important;
     color: #12262b !important;
@@ -241,7 +264,8 @@ a:hover {
     color: #bedfe5 !important;
   }
 
-  .small:hover {
+  .small:hover,
+  .small:focus {
     padding: 0.1em 0.3em;
     border: 1px solid #bedfe5 !important;
     color: #12262b !important;
@@ -252,7 +276,8 @@ a:hover {
     color: #bedfe5 !important;
   }
 
-  .lightText:hover {
+  .lightText:hover,
+  .lightText:focus {
     padding: 0.1em 0.3em;
     border: 1px solid #bedfe5 !important;
     color: #12262b !important;
@@ -267,7 +292,8 @@ a:hover {
     color: #bedfe5 !important;
   }
 
-  .archive-year-toggle:hover {
+  .archive-year-toggle:hover,
+  .archive-year-toggle:focus {
     padding: 0.1em 0.3em;
     border: 1px solid #bedfe5 !important;
     color: #12262b !important;
@@ -278,7 +304,8 @@ a:hover {
     color: #bedfe5 !important;
   }
 
-  .month-title:hover {
+  .month-title:hover,
+  .month-title:focus {
     padding: 0.1em 0.3em;
     border: 1px solid #bedfe5 !important;
     color: #12262b !important;
@@ -293,7 +320,8 @@ a:hover {
     color: #bedfe5 !important;
   }
 
-  .month-posts a:hover {
+  .month-posts a:hover,
+  .month-posts a:focus {
     padding: 0.1em 0.3em;
     border: 1px solid #bedfe5 !important;
     color: #12262b !important;
@@ -324,7 +352,8 @@ a:hover {
     color: #bedfe5 !important;
   }
 
-  .search-results a:hover {
+  .search-results a:hover,
+  .search-results a:focus {
     padding: 0.1em 0.3em;
     border: 1px solid #bedfe5 !important;
     color: #12262b !important;
@@ -335,7 +364,8 @@ a:hover {
     color: #bedfe5 !important;
   }
 
-  .audio-toggle:hover {
+  .audio-toggle:hover,
+  .audio-toggle:focus {
     padding: 0.1em 0.3em;
     border: 1px solid #bedfe5 !important;
     color: #12262b !important;
