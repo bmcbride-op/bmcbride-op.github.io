@@ -55,7 +55,7 @@ a:visited {
   margin-right: 0.4em;
   margin-bottom: 0.2em;
   letter-spacing: 0.05em;
-  text-decoration: underline; /* Add underline */
+  text-decoration: underline;
   color: #003366;
   display: inline-block;
 }
@@ -113,7 +113,7 @@ a:visited {
   font-size: 1.3rem;
   font-weight: 700;
   color: #003366;
-  text-decoration: underline; /* Add underline */
+  text-decoration: underline;
   cursor: pointer;
   display: block;
 }
@@ -130,7 +130,7 @@ a:visited {
   font-size: 1.1rem;
   font-weight: 700;
   color: #003366;
-  text-decoration: underline; /* Add underline */
+  text-decoration: underline;
   cursor: pointer;
   display: block;
 }
@@ -145,7 +145,7 @@ a:visited {
 
 .month-posts a {
   color: #003366;
-  text-decoration: underline; /* Add underline */
+  text-decoration: underline;
   display: inline-block;
 }
 
@@ -162,7 +162,7 @@ a:visited {
   display: block;
   margin-bottom: 0.5em;
   color: #003366;
-  text-decoration: underline; /* Add underline */
+  text-decoration: underline;
   display: inline-block;
 }
 
@@ -182,7 +182,7 @@ a:visited {
   color: #003366;
   text-align: center;
   margin: 1em 0;
-  text-decoration: underline; /* Add underline */
+  text-decoration: underline;
   display: inline-block;
 }
 
@@ -219,7 +219,7 @@ a:visited {
 
   #header a:not(#logo) {
     color: #bedfe5 !important;
-    text-decoration: underline; /* Add underline */
+    text-decoration: underline;
   }
 
   #header a:not(#logo):hover,
@@ -263,7 +263,7 @@ a:visited {
 
   .archive-year-toggle {
     color: #bedfe5 !important;
-    text-decoration: underline; /* Add underline */
+    text-decoration: underline;
   }
 
   .archive-year-toggle:hover,
@@ -276,7 +276,7 @@ a:visited {
 
   .month-title {
     color: #bedfe5 !important;
-    text-decoration: underline; /* Add underline */
+    text-decoration: underline;
   }
 
   .month-title:hover,
@@ -293,7 +293,7 @@ a:visited {
 
   .month-posts a {
     color: #bedfe5 !important;
-    text-decoration: underline; /* Add underline */
+    text-decoration: underline;
   }
 
   .month-posts a:hover,
@@ -326,7 +326,7 @@ a:visited {
 
   .search-results a {
     color: #bedfe5 !important;
-    text-decoration: underline; /* Add underline */
+    text-decoration: underline;
   }
 
   .search-results a:hover,
@@ -339,7 +339,7 @@ a:visited {
 
   .audio-toggle {
     color: #bedfe5 !important;
-    text-decoration: underline; /* Add underline */
+    text-decoration: underline;
   }
 
   .audio-toggle:hover,
@@ -350,8 +350,8 @@ a:visited {
     background: #bedfe5 !important;
   }
 
-  /* Restore blog title color in dark mode */
-  h1 {
+  /* Explicitly target blog post title to match other text color */
+  .blog-post h1 {
     color: #bedfe5 !important;
   }
 }
@@ -389,10 +389,9 @@ a:visited {
   position: relative;
   margin-bottom: 0;
   font-size: 1.7rem;
-  text-decoration: none; /* Ensure no underline */
+  text-decoration: none;
 }
 
-/* Remove hover effect for logo */
 #logo:hover,
 #logo:focus {
   padding: 0;
