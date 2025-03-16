@@ -49,15 +49,15 @@ a:visited {
   color: #003366 !important;
 }
 
-/* Header-specific link styles with highlight effect */
+/* Header-specific link styles with highlight and underline effect */
 #header a:not(#logo) {
   font-size: 1.0rem;
   margin-right: 0.4em;
   margin-bottom: 0.2em;
   letter-spacing: 0.05em;
-  text-decoration: none;
+  text-decoration: underline; /* Add underline */
   color: #003366;
-  display: inline-block; /* Ensure padding and border work */
+  display: inline-block;
 }
 
 #header a:not(#logo):hover,
@@ -69,7 +69,7 @@ a:visited {
   outline: none;
 }
 
-/* Blog list links (revert to color change only) */
+/* Blog list links (no underline, color change only) */
 .entryLink {
   display: block;
   margin-bottom: 2em;
@@ -81,7 +81,7 @@ a:visited {
 
 .entryLink:hover,
 .entryLink:focus {
-  color: #0055a4; /* Revert to previous hover color */
+  color: #0055a4;
 }
 
 .small {
@@ -105,15 +105,15 @@ a:visited {
 
 .lightText:hover,
 .lightText:focus {
-  color: #003366; /* Remove hover effect for date */
+  color: #003366;
 }
 
-/* Archive links with highlight effect */
+/* Archive links with highlight and underline effect */
 .archive-year-toggle {
   font-size: 1.3rem;
   font-weight: 700;
   color: #003366;
-  text-decoration: none;
+  text-decoration: underline; /* Add underline */
   cursor: pointer;
   display: block;
 }
@@ -130,7 +130,7 @@ a:visited {
   font-size: 1.1rem;
   font-weight: 700;
   color: #003366;
-  text-decoration: none;
+  text-decoration: underline; /* Add underline */
   cursor: pointer;
   display: block;
 }
@@ -145,7 +145,7 @@ a:visited {
 
 .month-posts a {
   color: #003366;
-  text-decoration: none;
+  text-decoration: underline; /* Add underline */
   display: inline-block;
 }
 
@@ -157,12 +157,12 @@ a:visited {
   background: #003366;
 }
 
-/* Search results links with highlight effect */
+/* Search results links with highlight and underline effect */
 .search-results a {
   display: block;
   margin-bottom: 0.5em;
   color: #003366;
-  text-decoration: none;
+  text-decoration: underline; /* Add underline */
   display: inline-block;
 }
 
@@ -174,7 +174,7 @@ a:visited {
   background: #003366;
 }
 
-/* Audio toggle link with highlight effect */
+/* Audio toggle link with highlight and underline effect */
 .audio-toggle {
   display: block;
   font-family: var(--monospace);
@@ -182,7 +182,7 @@ a:visited {
   color: #003366;
   text-align: center;
   margin: 1em 0;
-  text-decoration: none;
+  text-decoration: underline; /* Add underline */
   display: inline-block;
 }
 
@@ -219,6 +219,7 @@ a:visited {
 
   #header a:not(#logo) {
     color: #bedfe5 !important;
+    text-decoration: underline; /* Add underline */
   }
 
   #header a:not(#logo):hover,
@@ -235,7 +236,7 @@ a:visited {
 
   .entryLink:hover,
   .entryLink:focus {
-    color: #d1e8f0 !important; /* Revert to previous hover color */
+    color: #d1e8f0 !important;
   }
 
   .small {
@@ -253,7 +254,7 @@ a:visited {
 
   .lightText:hover,
   .lightText:focus {
-    color: #bedfe5 !important; /* Remove hover effect for date */
+    color: #bedfe5 !important;
   }
 
   .archives h2 {
@@ -262,6 +263,7 @@ a:visited {
 
   .archive-year-toggle {
     color: #bedfe5 !important;
+    text-decoration: underline; /* Add underline */
   }
 
   .archive-year-toggle:hover,
@@ -274,6 +276,7 @@ a:visited {
 
   .month-title {
     color: #bedfe5 !important;
+    text-decoration: underline; /* Add underline */
   }
 
   .month-title:hover,
@@ -290,6 +293,7 @@ a:visited {
 
   .month-posts a {
     color: #bedfe5 !important;
+    text-decoration: underline; /* Add underline */
   }
 
   .month-posts a:hover,
@@ -322,6 +326,7 @@ a:visited {
 
   .search-results a {
     color: #bedfe5 !important;
+    text-decoration: underline; /* Add underline */
   }
 
   .search-results a:hover,
@@ -334,6 +339,7 @@ a:visited {
 
   .audio-toggle {
     color: #bedfe5 !important;
+    text-decoration: underline; /* Add underline */
   }
 
   .audio-toggle:hover,
@@ -344,7 +350,7 @@ a:visited {
     background: #bedfe5 !important;
   }
 
-  /* Ensure blog post titles are correct in dark mode */
+  /* Restore blog title color in dark mode */
   h1 {
     color: #bedfe5 !important;
   }
@@ -383,6 +389,7 @@ a:visited {
   position: relative;
   margin-bottom: 0;
   font-size: 1.7rem;
+  text-decoration: none; /* Ensure no underline */
 }
 
 /* Remove hover effect for logo */
