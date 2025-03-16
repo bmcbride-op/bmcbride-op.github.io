@@ -40,26 +40,16 @@ body {
 
 /* Global link styles to override default colors */
 a {
-  color: #003366 !important; /* Force light mode color */
+  color: #003366 !important;
   text-decoration: none;
-  display: inline-block; /* Ensure padding and border work */
-  transition: all 0.2s ease; /* Smooth transition for hover effect */
+  transition: all 0.2s ease;
 }
 
 a:visited {
-  color: #003366 !important; /* Remove purple visited color */
+  color: #003366 !important;
 }
 
-a:hover,
-a:focus {
-  padding: 0.1em 0.3em !important; /* Add padding to create the "box" */
-  border: 1px solid #003366 !important; /* Border matches text color */
-  color: #fffefd !important; /* Text changes to background color */
-  background: #003366 !important; /* Background matches text color for the "box" */
-  outline: none; /* Remove default focus outline if desired */
-}
-
-/* Header-specific link styles */
+/* Header-specific link styles with highlight effect */
 #header a:not(#logo) {
   font-size: 1.0rem;
   margin-right: 0.4em;
@@ -67,6 +57,7 @@ a:focus {
   letter-spacing: 0.05em;
   text-decoration: none;
   color: #003366;
+  display: inline-block; /* Ensure padding and border work */
 }
 
 #header a:not(#logo):hover,
@@ -75,8 +66,10 @@ a:focus {
   border: 1px solid #003366;
   color: #fffefd;
   background: #003366;
+  outline: none;
 }
 
+/* Blog list links (revert to color change only) */
 .entryLink {
   display: block;
   margin-bottom: 2em;
@@ -88,10 +81,7 @@ a:focus {
 
 .entryLink:hover,
 .entryLink:focus {
-  padding: 0.1em 0.3em;
-  border: 1px solid #003366;
-  color: #fffefd;
-  background: #003366;
+  color: #0055a4; /* Revert to previous hover color */
 }
 
 .small {
@@ -104,10 +94,7 @@ a:focus {
 
 .small:hover,
 .small:focus {
-  padding: 0.1em 0.3em;
-  border: 1px solid #003366;
-  color: #fffefd;
-  background: #003366;
+  color: #0055a4;
 }
 
 .lightText {
@@ -118,12 +105,10 @@ a:focus {
 
 .lightText:hover,
 .lightText:focus {
-  padding: 0.1em 0.3em;
-  border: 1px solid #003366;
-  color: #fffefd;
-  background: #003366;
+  color: #003366; /* Remove hover effect for date */
 }
 
+/* Archive links with highlight effect */
 .archive-year-toggle {
   font-size: 1.3rem;
   font-weight: 700;
@@ -161,6 +146,7 @@ a:focus {
 .month-posts a {
   color: #003366;
   text-decoration: none;
+  display: inline-block;
 }
 
 .month-posts a:hover,
@@ -171,11 +157,13 @@ a:focus {
   background: #003366;
 }
 
+/* Search results links with highlight effect */
 .search-results a {
   display: block;
   margin-bottom: 0.5em;
   color: #003366;
   text-decoration: none;
+  display: inline-block;
 }
 
 .search-results a:hover,
@@ -186,6 +174,7 @@ a:focus {
   background: #003366;
 }
 
+/* Audio toggle link with highlight effect */
 .audio-toggle {
   display: block;
   font-family: var(--monospace);
@@ -194,6 +183,7 @@ a:focus {
   text-align: center;
   margin: 1em 0;
   text-decoration: none;
+  display: inline-block;
 }
 
 .audio-toggle:hover,
@@ -216,16 +206,7 @@ a:focus {
   }
 
   a:visited {
-    color: #bedfe5 !important; /* Remove purple visited color in dark mode */
-  }
-
-  a:hover,
-  a:focus {
-    padding: 0.1em 0.3em !important;
-    border: 1px solid #bedfe5 !important;
-    color: #12262b !important;
-    background: #bedfe5 !important;
-    outline: none;
+    color: #bedfe5 !important;
   }
 
   #header {
@@ -254,10 +235,7 @@ a:focus {
 
   .entryLink:hover,
   .entryLink:focus {
-    padding: 0.1em 0.3em;
-    border: 1px solid #bedfe5 !important;
-    color: #12262b !important;
-    background: #bedfe5 !important;
+    color: #d1e8f0 !important; /* Revert to previous hover color */
   }
 
   .small {
@@ -266,10 +244,7 @@ a:focus {
 
   .small:hover,
   .small:focus {
-    padding: 0.1em 0.3em;
-    border: 1px solid #bedfe5 !important;
-    color: #12262b !important;
-    background: #bedfe5 !important;
+    color: #d1e8f0 !important;
   }
 
   .lightText {
@@ -278,10 +253,7 @@ a:focus {
 
   .lightText:hover,
   .lightText:focus {
-    padding: 0.1em 0.3em;
-    border: 1px solid #bedfe5 !important;
-    color: #12262b !important;
-    background: #bedfe5 !important;
+    color: #bedfe5 !important; /* Remove hover effect for date */
   }
 
   .archives h2 {
@@ -371,6 +343,11 @@ a:focus {
     color: #12262b !important;
     background: #bedfe5 !important;
   }
+
+  /* Ensure blog post titles are correct in dark mode */
+  h1 {
+    color: #bedfe5 !important;
+  }
 }
 
 /* Rest of your existing CSS remains unchanged */
@@ -406,6 +383,25 @@ a:focus {
   position: relative;
   margin-bottom: 0;
   font-size: 1.7rem;
+}
+
+/* Remove hover effect for logo */
+#logo:hover,
+#logo:focus {
+  padding: 0;
+  border: none;
+  color: #003366;
+  background: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  #logo:hover,
+  #logo:focus {
+    padding: 0;
+    border: none;
+    color: #bedfe5 !important;
+    background: none !important;
+  }
 }
 
 .blog-list {
