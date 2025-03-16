@@ -35,9 +35,315 @@ body {
   overflow-wrap: break-word;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
-  transition: background 0.3s, color 0.3s; /* Smooth transition for mode switch */
+  transition: background 0.3s, color 0.3s;
 }
 
+/* General link styles */
+a {
+  color: #003366;
+  text-decoration: none;
+  transition: all 0.2s ease; /* Smooth transition for hover effect */
+}
+
+a:hover {
+  padding: 0.1em 0.3em; /* Add padding to create the "box" */
+  border: 1px solid #003366; /* Border matches text color */
+  color: #fffefd; /* Text changes to background color */
+  background: #003366; /* Background matches text color for the "box" */
+}
+
+/* Header-specific link styles */
+#header a:not(#logo) {
+  font-size: 1.0rem;
+  margin-right: 0.4em;
+  margin-bottom: 0.2em;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  color: #003366;
+}
+
+#header a:not(#logo):hover {
+  padding: 0.1em 0.3em;
+  border: 1px solid #003366;
+  color: #fffefd;
+  background: #003366;
+}
+
+.entryLink {
+  display: block;
+  margin-bottom: 2em;
+  text-decoration: none;
+  color: #003366;
+  white-space: normal;
+  font-size: 1.2rem;
+}
+
+.entryLink:hover {
+  padding: 0.1em 0.3em;
+  border: 1px solid #003366;
+  color: #fffefd;
+  background: #003366;
+}
+
+.small {
+  font-size: 1.0rem;
+  color: #003366;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.33em;
+}
+
+.small:hover {
+  padding: 0.1em 0.3em;
+  border: 1px solid #003366;
+  color: #fffefd;
+  background: #003366;
+}
+
+.lightText {
+  font-size: 1.1rem;
+  color: #003366;
+  text-decoration: none;
+}
+
+.lightText:hover {
+  padding: 0.1em 0.3em;
+  border: 1px solid #003366;
+  color: #fffefd;
+  background: #003366;
+}
+
+.archive-year-toggle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #003366;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+}
+
+.archive-year-toggle:hover {
+  padding: 0.1em 0.3em;
+  border: 1px solid #003366;
+  color: #fffefd;
+  background: #003366;
+}
+
+.month-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #003366;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+}
+
+.month-title:hover {
+  padding: 0.1em 0.3em;
+  border: 1px solid #003366;
+  color: #fffefd;
+  background: #003366;
+}
+
+.month-posts a {
+  color: #003366;
+  text-decoration: none;
+}
+
+.month-posts a:hover {
+  padding: 0.1em 0.3em;
+  border: 1px solid #003366;
+  color: #fffefd;
+  background: #003366;
+}
+
+.search-results a {
+  display: block;
+  margin-bottom: 0.5em;
+  color: #003366;
+  text-decoration: none;
+}
+
+.search-results a:hover {
+  padding: 0.1em 0.3em;
+  border: 1px solid #003366;
+  color: #fffefd;
+  background: #003366;
+}
+
+/* Audio toggle link */
+.audio-toggle {
+  display: block;
+  font-family: var(--monospace);
+  font-size: 1.0rem;
+  color: #003366;
+  text-align: center;
+  margin: 1em 0;
+  text-decoration: none;
+}
+
+.audio-toggle:hover {
+  padding: 0.1em 0.3em;
+  border: 1px solid #003366;
+  color: #fffefd;
+  background: #003366;
+}
+
+/* Dark mode for system preference */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #12262b !important;
+    color: #bedfe5 !important;
+  }
+
+  a {
+    color: #bedfe5 !important;
+  }
+
+  a:hover {
+    padding: 0.1em 0.3em;
+    border: 1px solid #bedfe5 !important; /* Border matches dark mode text color */
+    color: #12262b !important; /* Text changes to dark mode background color */
+    background: #bedfe5 !important; /* Background matches dark mode text color */
+  }
+
+  #header {
+    color: #bedfe5 !important;
+  }
+
+  #logo {
+    color: #bedfe5 !important;
+  }
+
+  #header a:not(#logo) {
+    color: #bedfe5 !important;
+  }
+
+  #header a:not(#logo):hover {
+    padding: 0.1em 0.3em;
+    border: 1px solid #bedfe5 !important;
+    color: #12262b !important;
+    background: #bedfe5 !important;
+  }
+
+  .entryLink {
+    color: #bedfe5 !important;
+  }
+
+  .entryLink:hover {
+    padding: 0.1em 0.3em;
+    border: 1px solid #bedfe5 !important;
+    color: #12262b !important;
+    background: #bedfe5 !important;
+  }
+
+  .small {
+    color: #bedfe5 !important;
+  }
+
+  .small:hover {
+    padding: 0.1em 0.3em;
+    border: 1px solid #bedfe5 !important;
+    color: #12262b !important;
+    background: #bedfe5 !important;
+  }
+
+  .lightText {
+    color: #bedfe5 !important;
+  }
+
+  .lightText:hover {
+    padding: 0.1em 0.3em;
+    border: 1px solid #bedfe5 !important;
+    color: #12262b !important;
+    background: #bedfe5 !important;
+  }
+
+  .archives h2 {
+    color: #bedfe5 !important;
+  }
+
+  .archive-year-toggle {
+    color: #bedfe5 !important;
+  }
+
+  .archive-year-toggle:hover {
+    padding: 0.1em 0.3em;
+    border: 1px solid #bedfe5 !important;
+    color: #12262b !important;
+    background: #bedfe5 !important;
+  }
+
+  .month-title {
+    color: #bedfe5 !important;
+  }
+
+  .month-title:hover {
+    padding: 0.1em 0.3em;
+    border: 1px solid #bedfe5 !important;
+    color: #12262b !important;
+    background: #bedfe5 !important;
+  }
+
+  .month-posts li {
+    color: #bedfe5 !important;
+  }
+
+  .month-posts a {
+    color: #bedfe5 !important;
+  }
+
+  .month-posts a:hover {
+    padding: 0.1em 0.3em;
+    border: 1px solid #bedfe5 !important;
+    color: #12262b !important;
+    background: #bedfe5 !important;
+  }
+
+  .now h2 {
+    color: #bedfe5 !important;
+  }
+
+  .now h3 {
+    color: #bedfe5 !important;
+  }
+
+  .now h4 {
+    color: #bedfe5 !important;
+  }
+
+  .now li {
+    color: #bedfe5 !important;
+  }
+
+  .now .last-updated {
+    color: #bedfe5 !important;
+  }
+
+  .search-results a {
+    color: #bedfe5 !important;
+  }
+
+  .search-results a:hover {
+    padding: 0.1em 0.3em;
+    border: 1px solid #bedfe5 !important;
+    color: #12262b !important;
+    background: #bedfe5 !important;
+  }
+
+  .audio-toggle {
+    color: #bedfe5 !important;
+  }
+
+  .audio-toggle:hover {
+    padding: 0.1em 0.3em;
+    border: 1px solid #bedfe5 !important;
+    color: #12262b !important;
+    background: #bedfe5 !important;
+  }
+}
+
+/* Rest of your existing CSS remains unchanged */
 .site-wrapper {
   overflow-x: hidden;
   width: 100%;
@@ -72,50 +378,12 @@ body {
   font-size: 1.7rem;
 }
 
-#header a:not(#logo) {
-  font-size: 1.0rem;
-  margin-right: 0.4em;
-  margin-bottom: 0.2em;
-  letter-spacing: 0.05em;
-  text-decoration: none;
-  color: #003366;
-}
-
-#header a:hover {
-  color: #0055a4;
-}
-
 .blog-list {
   max-width: 700px;
   margin: 0 auto;
   text-align: left;
   box-sizing: border-box;
   overflow-x: hidden;
-}
-
-.entryLink {
-  display: block;
-  margin-bottom: 2em;
-  text-decoration: none;
-  color: #003366;
-  white-space: normal;
-  font-size: 1.2rem;
-}
-
-.entryLink:hover {
-  color: #0055a4;
-}
-
-.small {
-  font-size: 1.0rem;
-  color: #003366;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 0.33em;
-}
-
-.small:hover {
-  color: #0055a4;
 }
 
 .link {
@@ -128,16 +396,6 @@ body {
   font-family: var(--monospace);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.lightText {
-  font-size: 1.1rem;
-  color: #003366;
-  text-decoration: none;
-}
-
-.lightText:hover {
-  color: #0055a4;
 }
 
 h1 {
@@ -195,20 +453,7 @@ p {
 }
 
 .archive-toggle {
-  display: none; /* Hide checkboxes */
-}
-
-.archive-year-toggle {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #003366;
-  text-decoration: none;
-  cursor: pointer;
-  display: block;
-}
-
-.archive-year-toggle:hover {
-  color: #0055a4;
+  display: none;
 }
 
 .archive-year-content {
@@ -222,19 +467,6 @@ p {
 .archive-month {
   margin-bottom: 0.5em;
   padding-left: 1em;
-}
-
-.month-title {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #003366;
-  text-decoration: none;
-  cursor: pointer;
-  display: block;
-}
-
-.month-title:hover {
-  color: #0055a4;
 }
 
 .month-content {
@@ -255,15 +487,6 @@ p {
   font-size: 1.2rem;
   color: #003366;
   margin-bottom: 0.25em;
-}
-
-.month-posts a {
-  color: #003366;
-  text-decoration: none;
-}
-
-.month-posts a:hover {
-  color: #0055a4;
 }
 
 /* Now Page Styling */
@@ -312,6 +535,67 @@ p {
   font-size: 0.6rem;
   color: #003366;
   margin-top: 2em;
+}
+
+/* Search Page Styling */
+.search-container {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.search-input {
+  font-family: var(--monospace);
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  box-sizing: border-box;
+  border: none;
+  background: #fffefd;
+  color: #003366;
+}
+
+@media (prefers-color-scheme: dark) {
+  .search-input {
+    background: #12262b;
+    color: #bedfe5;
+    border: 1px solid #bedfe5;
+  }
+}
+
+.search-results {
+  margin-top: 1em;
+}
+
+/* Audio Player Styling */
+audio {
+  display: block;
+  margin: 1em auto;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+  background: #fffefd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  audio {
+    background: #12262b;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  }
+}
+
+audio::-webkit-media-controls-panel {
+  background: #fffefd;
+  color: #003366;
+}
+
+@media (prefers-color-scheme: dark) {
+  audio::-webkit-media-controls-panel {
+    background: #12262b;
+    color: #bedfe5;
+  }
 }
 
 /* Mobile Responsiveness */
@@ -447,117 +731,5 @@ p {
 
   .now .last-updated {
     font-size: 0.5rem;
-  }
-}
-
-/* Dark mode for system preference */
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #12262b !important;
-    color: #bedfe5 !important;
-  }
-
-  #header {
-    color: #bedfe5 !important;
-  }
-
-  #logo {
-    color: #bedfe5 !important;
-  }
-
-  #header a:not(#logo) {
-    color: #bedfe5 !important;
-  }
-
-  #header a:hover {
-    color: #d1e8f0 !important;
-  }
-
-  .entryLink {
-    color: #bedfe5 !important;
-  }
-
-  .entryLink:hover {
-    color: #d1e8f0 !important;
-  }
-
-  .small {
-    color: #bedfe5 !important;
-  }
-
-  .small:hover {
-    color: #d1e8f0 !important;
-  }
-
-  .link {
-    color: #bedfe5 !important;
-  }
-
-  .lightText {
-    color: #bedfe5 !important;
-  }
-
-  .lightText:hover {
-    color: #d1e8f0 !important;
-  }
-
-  h1 {
-    color: #bedfe5 !important;
-  }
-
-  p {
-    color: #bedfe5 !important;
-  }
-
-  .archives h2 {
-    color: #bedfe5 !important;
-  }
-
-  .archive-year-toggle {
-    color: #bedfe5 !important;
-  }
-
-  .archive-year-toggle:hover {
-    color: #d1e8f0 !important;
-  }
-
-  .month-title {
-    color: #bedfe5 !important;
-  }
-
-  .month-title:hover {
-    color: #d1e8f0 !important;
-  }
-
-  .month-posts li {
-    color: #bedfe5 !important;
-  }
-
-  .month-posts a {
-    color: #bedfe5 !important;
-  }
-
-  .month-posts a:hover {
-    color: #d1e8f0 !important;
-  }
-
-  .now h2 {
-    color: #bedfe5 !important;
-  }
-
-  .now h3 {
-    color: #bedfe5 !important;
-  }
-
-  .now h4 {
-    color: #bedfe5 !important;
-  }
-
-  .now li {
-    color: #bedfe5 !important;
-  }
-
-  .now .last-updated {
-    color: #bedfe5 !important;
   }
 }
