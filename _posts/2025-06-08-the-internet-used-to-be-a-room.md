@@ -10,7 +10,7 @@ And when you were done, you left. You logged off. You stepped away from it. The 
 
 I can’t be the only one who feels this way. Right?
 
-Recently, I came across Cameron’s World, and man… it hit me hard. It’s this beautifully weird and nostalgic collage built from old Geocities websites. You click through it and suddenly you’re back in the late ’90s. Dancing GIFs, rainbow fonts, awkward layouts that make no sense—but somehow they feel more alive than anything online today. They weren’t polished or professional. They weren’t trying to optimize traffic or build a brand. They just existed because someone wanted them to exist.
+Recently, I came across [Cameron’s World](https://www.cameronsworld.net), and man… it hit me hard. It’s this beautifully weird and nostalgic collage built from old Geocities websites. You click through it and suddenly you’re back in the late ’90s. Dancing GIFs, rainbow fonts, awkward layouts that make no sense—but somehow they feel more alive than anything online today. They weren’t polished or professional. They weren’t trying to optimize traffic or build a brand. They just existed because someone wanted them to exist.
 
 Each page feels like a ghost. Not in a creepy way, but in the kind of way that stirs something deep in your chest. Dead email addresses. Broken guestbooks. Passion projects frozen in time. It’s like wandering through an abandoned digital neighborhood, one where every house had its own weird personality. These sites weren’t part of some bigger platform. They were little islands built by regular people who were just excited to share something.
 
