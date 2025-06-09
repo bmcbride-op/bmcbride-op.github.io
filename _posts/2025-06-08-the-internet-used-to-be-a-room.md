@@ -18,7 +18,21 @@ Everything now feels sterile. Cold. Like it was designed by a committee instead 
 
 Lately, I’ve been trying to break away from that always-on rhythm. I’ve made a conscious effort to stop grabbing for my phone to explore the web or communicate. Instead, I open my laptop. It sounds simple, but it really makes a difference. Typing with ten fingers instead of two thumbs slows everything down in a good way. It feels more intentional. More like the old days, where you sat down at a computer to use the internet, not just kill time with it.
 
-Back then, someone might’ve made a whole site about their favorite band, or their cat, or some bizarre theory they believed in. It didn’t matter how strange or personal it was. The point was that it felt human. The web felt unpredictable, messy, and fun. You never knew what you’d stumble across, and that was the best part.
+I think about _Ultima Online_ a lot when I’m in that headspace, just because how legendary it felt at the time (and still does to some extent when it comes to what you can achieve in a game). Logging in back then didn’t feel like booting up a game. It felt like dialing into another reality. And the moment you saw another player walk across the screen? Unreal. Just knowing that somewhere, someone else was sitting at their computer, living their own little life inside the same world as you—it honestly felt like science fiction. You weren’t just playing. You were connected.
+
+[DialUp.mp3](/audio/dialup.mp3)
+
+Today, we take that for granted. We expect it. Every app or online game we open has thousands or millions of people on it, all the time. There’s no wonder in it anymore. But back then, that connection felt rare. Special. It was like discovering a secret tunnel and realizing someone else had found it too. It didn’t just make the world feel big—it made it feel alive.
+
+Back to UO: Seeing a stranger ride by on a horse, or walk out of the Minoc mines, or wander into the same tavern you were in? It fired up your imagination instantly. Were they a blacksmith heading home for the night? A thief stalking you through the trees? A friend you hadn’t met yet? Or were they just about to kill you and loot everything you owned? You never knew—and that unpredictability is exactly what made it magic.
+
+It felt like being part of a niche little universe, filled with people who got it. People who were just as obsessed with this weird online world as you were. It wasn’t just something to do. It wasn’t a time killer. It was a commitment. You planned your evening around it. You logged on with purpose. And every interaction felt like a story waiting to happen.
+
+These days, most online spaces feel like bus stations. People just passing through, eyes down (quite literally now with phones), killing time. But back then? It was a village. A messy, dangerous, strangely beautiful village full of people you’d never meet in real life—but somehow still knew.
+
+That sense of wonder is hard to come by now. We've become so numb to it.
+
+Back to the old web: Back then, someone might’ve made a whole site about their favorite band, or their cat, or some bizarre theory they believed in. It didn’t matter how strange or personal it was. The point was that it felt human. The web felt unpredictable, messy, and fun. You never knew what you’d stumble across, and that was the best part.
 
 Now it’s all about metrics. Follower counts. Brand deals. Engagement. Everything looks the same, sounds the same, and scrolls the same.
 
