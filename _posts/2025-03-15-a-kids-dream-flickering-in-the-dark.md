@@ -40,7 +40,11 @@ Above - and below - you’ll see a few of the only surviving screenshots of my c
 ![The only screenshots of my actual character from 2000](/images/slimshady9.jpg)
 ![The only screenshots of my actual character from 2000](/images/slimshady10.jpg)
 
-When our house finally upgraded to DSL, UO turned into something we could share. No more fighting over the modem...we were always connected, and it was glorious. We both started saving up for new machines. I snagged a 2001 Dell Inspiron 8200...technically for The Elder Scrolls III: Morrowind, but let’s be real, most of my hours went to UO. My brother got a Dell laptop too, and soon we were posted up in my room, late into the night, screens glowing side by side. We’d roam Britannia together, fending off in-game murderers, laughing and yelling as we went. Those MIDI tunes...those lonely, distant melodies...are carved into my brain. They take me back to those nights, just two brothers being brothers, living in a world that felt like ours alone.
+When our house finally upgraded to DSL, UO turned into something we could share. No more fighting over the modem...we were always connected, and it was glorious. We both started saving up for new machines. I snagged a 2001 Dell Inspiron 8200...technically for The Elder Scrolls III: Morrowind, but let’s be real, most of my hours went to UO. 
+
+![Dell Inspiron 8200](/images/dell8200.jpg)
+
+My brother got a Dell laptop too, and soon we were posted up in my room, late into the night, screens glowing side by side. We’d roam Britannia together, fending off in-game murderers, laughing and yelling as we went. Those MIDI tunes...those lonely, distant melodies...are carved into my brain. They take me back to those nights, just two brothers being brothers, living in a world that felt like ours alone.
 
 [Swamp.mp3](/audio/swamp2.mp3)
 
