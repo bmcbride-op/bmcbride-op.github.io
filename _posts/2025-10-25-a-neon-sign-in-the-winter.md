@@ -5,7 +5,7 @@ date: 2025-10-25 20:41
 ---
 
 There used to be a simple time when you’d plug a cartridge into a console and instantly be playing. No loading screens. No updates. Just action the moment you hit start.
-Nintendo and Sega paved the way for what would become the era of PlayStation, an age of story-driven, graphically intense games. But before the first PlayStation took over living rooms, there was an era of early 3D magic with the Nintendo 64.
+Nintendo and Sega paved the way for what would become the era of PlayStation, an age of story-driven, graphically intense games. But before the first PlayStation took over living rooms, there was an era of early 3D magic in our house with the Nintendo 64.
 
 When I close my eyes, it’s 1996.
 Friday night after school. My brother and I had just stepped off the bus and started our three-quarter-mile walk home through the woods. It was always quiet there. You could hear the little critters scurrying through the leaves, the wind pushing through the trees like a soft whisper guiding us home. When we finally reached the house, Mom would be waiting in the driveway, cleaning up, greeting us with that warm “hello” and a hug that reminded you that you were home.
