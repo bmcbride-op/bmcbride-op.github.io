@@ -13,7 +13,7 @@ A little later, Dad would pull in, honking his horn as he celebrated the end of 
 
 That night, it was Pasta House inside the mall. I ordered my usual toasted ravioli. The place was alive, crowds of people everywhere, laughter echoing through the open halls, and not a single person staring down at a phone. Everyone was present. Everyone was alive. The fountains roared, coins glimmered under the surface, and every store was bustling. This was normal. This was life.
 
-When we left the mall, Dad drove us through the suburbs and we passed a small local video game store, one of those hidden gems that felt different from every other one. The moment we stepped inside, the warm glow of CRTs lit up the room. I looked up at a TV mounted high in the corner and froze.
+When we left the mall, Mom & Dad drove us through the suburbs and we passed a small local video game store, one of those hidden gems that felt different from every other one. The moment we stepped inside, the warm glow of CRTs lit up the room. I looked up at a TV mounted high in the corner and froze.
 Mario. In full 3D. Running through a world that looked impossibly alive, colors bursting like neon signs against winter snow. My jaw hung open. It was the Nintendo 64 I’d only heard whispers about. I remember thinking, this is the future. Even the strange M-shaped controller felt like it came from another world.
 
 That night, when we got home and fired up our old Sega Genesis, I remember feeling like I was playing something ancient. My brother and I played Gunstar Heroes, but all I could think about was what 3D worlds awaited us someday.
