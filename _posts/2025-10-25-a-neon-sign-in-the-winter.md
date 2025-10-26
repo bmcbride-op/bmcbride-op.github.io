@@ -29,6 +29,8 @@ Even the save files are like fossils, time trials and scores that haven’t chan
 The Nintendo 64 was my first 3D console. But just a few years later, we'd discover the magic of the PlayStation.
 I still remember seeing Resident Evil 2 for the first time at my cousin’s house on his small CRT. It terrified and amazed me. The atmosphere, the sound, the realism, it was beyond anything I’d ever seen. So once again, we begged our parents for another console. “You already have a Nintendo,” they said. But we persisted, and eventually, we got our PlayStation.
 
+<img src="/images/re2.jpg" alt="Resident Evil 2" />
+
 Within the next year, I bought my first console with my own money, the PlayStation 2. I still remember being number 93 in line at Babbage’s to reserve it. I put down $100 and slowly paid it off over the next year. When release day came, my dad surprised me by picking it up while I was at school.
 I came home to that big blue box sitting in my room, the same feeling all over again, like stepping into the future. My first game was Dead or Alive 2: Hardcore, which I’d fallen in love with from a demo disc in PlayStation Magazine.
 
@@ -43,3 +45,5 @@ All I know is that I’m going back, back to my retro collection, to the games I
 And as I open my eyes, it’s 2025 again.
 I’m playing games that are three decades old, my CRT glowing like a time portal back to those woods, back to my old house, back to the crowded malls, the video game shops, and the family dinners.
 Back to that kid who stared up at Mario in 3D, eyes wide open, heart full of wonder, and a dream of what games could someday become. Glowing bright in my mind, like a neon sign in the winter.
+
+__brandon_
