@@ -20,8 +20,8 @@ He's got my back. We dash the last stretch to my place, a humble shack tucked in
 
 Inside, we unload the ore into the forge. Sparks fly as I smelt, the hammer clanging like thunder. We plan the night: hit the dungeons, hunt liches in Destard, maybe steal a rare from Vesper if we're bold. Laughter echoes in the chat box. No voice, no Discord; just pure, unfiltered text and imagination. Hours melt away. Dawn creeps in my window, but in-game, the moons rise over the mountains.
 
-I open my eyes. It's 2026 now. Those memories hit like a fresh respawn sharp, vivid, irreplaceable. I still have the old discs somewhere in a box. But that house near Minoc? Locked and decayed. My old friend? Haven't whispered in 20 years. Napa Valley's a ghost shard: empty streets, silent guards, the wind howling through abandoned taverns. Player run villages sit in a ghostly silence.
+I open my eyes. It's 2026 now. Those memories hit like a fresh respawn sharp, vivid, irreplaceable. I still have the old discs somewhere in a box. But that house near Minoc? Decayed and no long exists. My old friend? We haven't talked in over 20 years. Napa Valley's a ghost shard: empty streets, silent guards, the wind howling through abandoned taverns. Player run villages sit in a ghostly silence.
 
 I will forever remember Ultima Online as it once was. A world where every login felt like magic. A time to call our own.
 
-_/ brandon_
+__brandon_
