@@ -17,6 +17,10 @@ We get home from our Blockbuster trip, with Resident Evil 2 in hand. It's dark o
 
 At one point I felt the sense of dread wash over me and wanted to call it a night. We made it to a room underneath the stairs and as soon as we opened the door a calm and haunting melody started to play. I felt... safe. My brother and I just kind of stared at the TV in the dark room. Its glow showed two faces exhausted from the horror. This is our first horror game. We explore the room and let the music play out as it calms us down. We save our game and decide to call it a night and went back to some rough housing with some Nerf guns. We don't touch the game for the rest of the weekend.
 
-I open my eyes and it's 2026. All of those memories are still so fresh inside my mind. However, I no longer have those summer nights at my cousin's house. My old cousin and I haven't talked since my grandma passed almost a decade ago and the family gatherings have faded into quiet. I will forever remember this great game as it once was.
+I open my eyes and it's 2026. All of those memories are still so fresh inside my mind. However, I no longer have those summer nights at my cousin's house. My cousin and I haven't talked since my grandma passed almost a decade ago and the family gatherings have faded into quiet. I will forever remember this great game as it once was.
 
 Resident Evil 2 is the reason I begged for a PlayStation. Gaming has changed and games don't carry the same raw impact they once did. But for some reason Resident Evil still feels the same. My character is standing in a safe room in Resident Evil Requiem with this same haunting melody playing and all of these memories come rushing back. Twenty-eight years I've been running from zombies or plagued monstrosities. Life has changed, but the way I feel about Resident Evil has not — a beacon in gaming. I miss those old days of being a kid, sitting in front of an old CRT with my brother and cousin. I wish for a moment we could go back to those days, the days we took for granted.
+
+![Me, My Brother and Our Cousins](/images/mebrocousins.jpeg)
+
+__brandon_
