@@ -7,6 +7,7 @@ date: 2026-03-08 10:09
 <a href="https://www.youtube.com/watch?v=bFPPi1SQzWU">RE2 Secure Place</a>
 
 I close my eyes. It's 1998.
+
 My family just spent a few hours in the car traveling to our cousin's house. It's warm outside, summer vacation. We're going to spend a few nights here hanging out with family. We get out of the car and see our cousin at his doorstep with my aunt. The excitement is unbearable, we can't wait to do nothing but be kids for the entire weekend.
 
 We step inside their house and one of the first things I see is that my cousin has a newly purchased PlayStation hooked up to their TV. Being a Nintendo 64 kid, I was intrigued because I knew the games on PlayStation were a bit more mature. He let me go through his games to check out what he has. We're all big into video games. I asked if he had any of the Resident Evil games that I've recently heard about in some gaming magazine. He shook his head. We all go off through the rest of the house, rough housing and being kids. Later that night we were going to order pizza and someone suggested we stop by Blockbuster to rent a movie. My ears perked up!
