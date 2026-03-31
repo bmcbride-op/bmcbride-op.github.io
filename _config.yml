@@ -2,3 +2,14 @@ title: Brandon McBride
 description: A log of my interests and inspirations
 baseurl: ""
 url: "https://housemcbride.com"
+
+# web admin info (used by jekyll-feed and good for RSS)
+author:
+  name: Brandon McBride
+  email: hello@housemcbride.com
+
+plugins:
+  - jekyll-feed
+
+feed:
+  posts_limit: 20
