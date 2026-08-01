@@ -8,6 +8,8 @@ Found this old UO story on Usenet that I wanted to share. The original date of t
 
 __brandon_
 
+https://groups.google.com/g/alt.games.ultima-online/c/JfZo7w27rWg?pli=1
+
 MARTOO SAUL AND JENIN PINCE DEAD ON PACIFIC!!!! (Long)
 
 Crow
