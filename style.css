@@ -473,3 +473,55 @@ ul.bbs .msgsubj a:hover {
     font-size: 0.85rem;
   }
 }
+
+/* =========================================================
+   BBS message-read style (individual posts)
+   ========================================================= */
+
+.bbs-msg-header {
+  border-top: 1px dotted var(--accent);
+  border-bottom: 1px dotted var(--accent);
+  padding: 0.75em 0;
+  margin: 0 0 1.75em 0;
+}
+.bbs-msg-header p {
+  margin: 0.25em 0;
+}
+.bbs-msg-header .label {
+  color: var(--accent);
+}
+
+.bbs-msg-body {
+  margin: 0 0 2.5em 0;
+}
+.bbs-msg-body p {
+  margin: 1.1em 0;
+  line-height: 1.55;
+}
+.bbs-msg-body h1,
+.bbs-msg-body h2,
+.bbs-msg-body h3 {
+  margin-top: 1.8em;
+}
+
+/* Footer navigation on posts */
+.bbs-pager {
+  color: var(--muted);
+  margin: 2em 0 1.5em 0;
+  border-top: 1px dotted var(--accent);
+  padding-top: 1em;
+}
+.bbs-pager a {
+  color: var(--text);
+}
+.bbs-pager a:hover {
+  background: var(--text);
+  color: var(--bg);
+  text-shadow: none;
+}
+
+/* Make sure the old post title styles don't fight the new header */
+.blog-post > .lightText,
+.blog-post > h1 {
+  display: none; /* we no longer use the old date + h1 on posts */
+}
