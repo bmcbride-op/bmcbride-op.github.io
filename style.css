@@ -369,3 +369,107 @@ hr {
 @media (prefers-color-scheme: dark) {
   /* intentionally empty – we force the terminal palette */
 }
+
+/* =========================================================
+   BBS-style post list (x51.dev/bbs/ inspired)
+   ========================================================= */
+
+.prompt {
+  color: var(--muted);
+  margin: 0 0 0.5em 0;
+}
+.prompt .cmd {
+  color: var(--text);
+}
+
+.bbs-connect {
+  color: var(--accent);
+  margin: 0.25em 0 1.5em 0;
+  line-height: 1.4;
+}
+
+.bbs-banner {
+  border: 3px double var(--accent);
+  padding: 1.25em 2em;
+  margin: 0 0 1.25em 0;
+  text-align: center;
+  color: var(--text);
+}
+.bbs-title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+}
+.bbs-sub {
+  margin: 0.3em 0 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.bbs-status {
+  color: var(--muted);
+  margin: 0 0 1.25em 0;
+}
+.bbs-status a {
+  color: var(--muted);
+}
+.bbs-status a:hover {
+  background: var(--text);
+  color: var(--bg);
+  text-shadow: none;
+}
+
+.bbs-header,
+ul.bbs li {
+  display: grid;
+  grid-template-columns: 4ch 14ch 1fr;
+  column-gap: 1.25rem;
+  margin-bottom: 0.4em;
+  text-align: left;
+}
+
+.bbs-header {
+  color: var(--accent);
+  border-bottom: 1px dotted var(--accent);
+  padding-bottom: 0.4em;
+  margin-bottom: 0.6em;
+  font-size: 0.9rem;
+}
+
+ul.bbs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.bbs .msgnum,
+ul.bbs .msgdate {
+  color: var(--accent);
+}
+
+ul.bbs .msgsubj a {
+  color: var(--text);
+  text-decoration: none;
+}
+ul.bbs .msgsubj a:hover {
+  background: var(--text);
+  color: var(--bg);
+  text-shadow: none;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .bbs-header {
+    display: none;
+  }
+  ul.bbs li {
+    grid-template-columns: 1fr;
+    margin-bottom: 1.1em;
+    gap: 0.15em;
+  }
+  ul.bbs .msgnum,
+  ul.bbs .msgdate {
+    font-size: 0.85rem;
+  }
+}
