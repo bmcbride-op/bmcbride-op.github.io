@@ -1,4 +1,31 @@
-/* Define Berkeley Mono font using .ttf */
+/* =========================================================
+   housemcbride.com — Terminal / CRT aesthetic
+   ========================================================= */
+
+/* --- Fonts --- */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/jetbrains-mono-regular.woff2') format('woff2');
+  font-weight: 100 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/jetbrains-mono-semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/jetbrains-mono-italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Fallback if you keep Berkeley Mono instead */
 @font-face {
   font-family: "Berkeley Mono";
   src: url("/fonts/TX-02-Regular.ttf") format("truetype");
@@ -6,7 +33,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Berkeley Mono";
   src: url("/fonts/TX-02-Bold.ttf") format("truetype");
@@ -16,548 +42,322 @@
 }
 
 :root {
-  --monospace: "Berkeley Mono", "Courier New", Courier, monospace;
+  --bg:        #464F41;
+  --text:      #EFF7D3;
+  --muted:     #BAC7A7;
+  --accent:    #889E81;
+  --darker:    #5C6952;
+  --font-mono: "JetBrains Mono", "Berkeley Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
 }
+
+* { box-sizing: border-box; }
 
 html {
   overflow-x: hidden;
+  scrollbar-color: var(--accent) var(--bg);
 }
 
 body {
-  font-family: var(--monospace) !important;
-  font-size: 1.2rem;
-  line-height: 1.8;
-  color: #003366;
-  background: #fffefd;
-  padding: 0;
+  font-family: var(--font-mono);
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
   margin: 0;
+  padding: 0;
+  text-shadow: 0 0 6px rgba(239, 247, 211, 0.12); /* phosphor glow */
   word-wrap: break-word;
   overflow-wrap: break-word;
-  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
-  transition: background 0.3s, color 0.3s; /* Smooth transition for mode switch */
 }
 
+/* CRT scanlines */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(rgba(0, 0, 0, 0.07) 0 1px, transparent 1px 3px);
+  background-size: 3px 3px;
+  z-index: 9999;
+}
+
+/* Layout */
 .site-wrapper {
   overflow-x: hidden;
   width: 100%;
   min-height: 100vh;
-  box-sizing: border-box;
 }
 
 .container {
   width: 90%;
   max-width: 700px;
   margin: 0 auto;
+  padding: 2rem 0 4rem;
   position: relative;
-  box-sizing: border-box;
-  overflow-x: hidden;
 }
 
+@media (min-width: 768px) {
+  .container { padding: 4rem 0 6rem; }
+}
+
+/* Header / Nav */
 #header {
-  text-align: center;
-  font-size: 1.7rem;
-  margin-bottom: 1em;
-  max-width: 100%;
+  text-align: left;
+  margin-bottom: 3rem;
+  font-size: 1rem;
 }
 
 #logo {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-weight: 700;
   display: block;
-  color: #003366;
-  position: relative;
-  margin-bottom: 0;
-  font-size: 1.7rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  text-decoration: none;
+  margin-bottom: 1rem;
+  text-transform: none;
 }
 
 #header a:not(#logo) {
-  font-size: 1.0rem;
-  margin-right: 0.4em;
-  margin-bottom: 0.2em;
-  letter-spacing: 0.05em;
+  font-size: 0.95rem;
+  margin-right: 1.1rem;
+  color: var(--muted);
   text-decoration: none;
-  color: #003366;
+  letter-spacing: 0.02em;
 }
 
-#header a:hover {
-  color: #0055a4;
+#header a:hover,
+#logo:hover {
+  background: var(--text);
+  color: var(--bg);
+  text-shadow: none;
+  text-decoration: none;
 }
 
+/* Blog list */
 .blog-list {
   max-width: 700px;
   margin: 0 auto;
   text-align: left;
-  box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 .entryLink {
   display: block;
-  margin-bottom: 2em;
+  margin-bottom: 2.2em;
   text-decoration: none;
-  color: #003366;
-  white-space: normal;
-  font-size: 1.2rem;
+  color: var(--text);
 }
 
 .entryLink:hover {
-  color: #0055a4;
+  background: transparent; /* keep clean; text color changes instead */
+}
+
+.entryLink:hover .link,
+.entryLink:hover .small {
+  background: var(--text);
+  color: var(--bg);
+  text-shadow: none;
 }
 
 .small {
-  font-size: 1.0rem;
-  color: #003366;
-  text-decoration: none;
+  font-size: 0.9rem;
+  color: var(--accent);
   display: block;
-  margin-bottom: 0.33em;
-}
-
-.small:hover {
-  color: #0055a4;
+  margin-bottom: 0.25em;
 }
 
 .link {
-  font-size: 1.8rem !important;
-  line-height: 1.8;
-  font-weight: 700 !important;
-  color: #003366 !important;
-  margin-bottom: 0.33em;
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+  color: var(--text) !important;
   display: block;
-  font-family: var(--monospace);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.4;
+  margin-bottom: 0.2em;
 }
 
-.lightText {
-  font-size: 1.1rem;
-  color: #003366;
-  text-decoration: none;
+.entryLink span:last-child {
+  color: var(--muted);
+  font-size: 0.95rem;
+  display: block;
+  margin-top: 0.15em;
 }
 
-.lightText:hover {
-  color: #0055a4;
+/* General typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.3;
 }
 
-h1 {
-  font-size: 1.8rem !important;
-  line-height: 1.8;
-  font-weight: 700 !important;
-  color: #003366 !important;
-  margin-bottom: 0.66em;
-  font-family: var(--monospace);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+h1 { font-size: 1.6rem; margin: 0 0 1.5rem; }
+h2 { font-size: 1.3rem; margin: 2.5em 0 0.75em; }
+h3 { font-size: 1.1rem; margin: 1.75em 0 0.6em; }
 
 p {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  color: #003366;
+  margin: 0 0 1.25em;
+  color: var(--text);
 }
 
-.blog-post {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: left;
+a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+a:hover {
+  background: var(--text);
+  color: var(--bg);
+  text-shadow: none;
+}
+
+::selection {
+  background: var(--text);
+  color: var(--bg);
+  text-shadow: none;
+}
+
+/* Code / pre */
+pre {
+  border: 1px dashed var(--accent);
+  background-color: rgba(0, 0, 0, 0.15);
+  white-space: pre-wrap;
   word-wrap: break-word;
-  box-sizing: border-box;
-  overflow-x: hidden;
+  margin: 1.5em 0;
+  padding: 1rem;
+  line-height: 1.4;
+  overflow-x: auto;
+}
+code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  color: var(--muted);
+  background: transparent;
+  padding: 0;
+}
+pre code {
+  color: var(--text);
 }
 
-.blog-post img,
-.post-image {
-  max-width: 400px !important;
-  width: 100%;
+/* Blockquotes */
+blockquote {
+  margin: 2em 0;
+  padding: 0 0 0 1.25rem;
+  border-left: 2px solid var(--accent);
+  color: var(--muted);
+  font-style: italic;
+}
+blockquote em, blockquote cite { font-style: normal; }
+
+/* Images */
+img {
+  max-width: 100%;
   height: auto;
   display: block;
-  margin: 1em auto;
-  object-fit: contain;
+  margin: 1.5em auto;
+}
+figure {
+  margin: 1.5em 0;
+  padding: 1rem;
+  border: 1px dashed var(--accent);
+  background-color: rgba(0, 0, 0, 0.15);
+}
+figcaption {
+  margin-top: 0.75em;
+  color: var(--accent);
+  font-style: italic;
+  text-align: center;
+  font-size: 0.9rem;
+}
+figcaption::before { content: "# "; }
+
+/* Lists */
+ul, ol {
+  margin: 0 0 1.5em 1.5em;
+  padding: 0;
+  color: var(--text);
+}
+li { margin-bottom: 0.4em; }
+
+/* Horizontal rule */
+hr {
+  height: 1px;
+  border: 0;
+  border-top: 1px dotted var(--muted);
+  background: transparent;
+  margin: 2.5em 0;
 }
 
-/* Archives Styling with Expand/Collapse */
-.archives {
+/* Archives / Now pages (basic support) */
+.archives, .now {
   max-width: 700px;
   margin: 0 auto;
-  text-align: left;
 }
-
-.archives h2 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #003366;
-  margin-bottom: 1em;
+.archives h2, .now h2 {
+  color: var(--text);
 }
-
-.archive-year {
-  margin-bottom: 1em;
-}
-
-.archive-toggle {
-  display: none; /* Hide checkboxes */
-}
-
-.archive-year-toggle {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #003366;
-  text-decoration: none;
-  cursor: pointer;
-  display: block;
-}
-
-.archive-year-toggle:hover {
-  color: #0055a4;
-}
-
-.archive-year-content {
-  display: none;
-}
-
-.archive-toggle:checked + .archive-year-toggle + .archive-year-content {
-  display: block;
-}
-
-.archive-month {
-  margin-bottom: 0.5em;
-  padding-left: 1em;
-}
-
+.archive-year-toggle,
 .month-title {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #003366;
-  text-decoration: none;
+  color: var(--muted);
   cursor: pointer;
-  display: block;
 }
-
+.archive-year-toggle:hover,
 .month-title:hover {
-  color: #0055a4;
+  color: var(--text);
 }
-
-.month-content {
-  display: none;
-}
-
-.archive-toggle:checked + .month-title + .month-content {
-  display: block;
-}
-
-.month-posts {
-  list-style: none;
-  padding-left: 1em;
-  margin: 0;
-}
-
-.month-posts li {
-  font-size: 1.2rem;
-  color: #003366;
-  margin-bottom: 0.25em;
-}
-
 .month-posts a {
-  color: #003366;
-  text-decoration: none;
+  color: var(--text);
 }
-
 .month-posts a:hover {
-  color: #0055a4;
+  background: var(--text);
+  color: var(--bg);
 }
 
-/* Now Page Styling */
-.now {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: left;
+/* Prompt-style helper classes (optional – use if you want terminal prompts) */
+.prompt {
+  color: var(--muted);
+  margin: 2.5em 0 1em 0;
+}
+.prompt .cmd { color: var(--text); }
+.prompt .comment {
+  color: var(--accent);
+  font-style: italic;
+}
+.cursor {
+  animation: cursor-blink 1.2s steps(1) infinite;
+}
+@keyframes cursor-blink {
+  50% { opacity: 0; }
 }
 
-.now h2 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #003366;
-  margin-bottom: 1em;
+/* Footer (optional – add this HTML if you want the wordmark style) */
+.site-footer {
+  text-align: center;
+  margin: 5em 0 2em;
+  color: var(--accent);
+  font-size: 0.85rem;
+}
+.site-footer a {
+  color: var(--muted);
+}
+.site-footer a:hover {
+  background: var(--text);
+  color: var(--bg);
 }
 
-.now h3 {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #003366;
-  margin-bottom: 0.5em;
-  margin-top: 1em;
-}
-
-.now h4 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #003366;
-  margin-bottom: 0.25em;
-  margin-top: 0.5em;
-}
-
-.now ul {
-  list-style: disc;
-  padding-left: 1.5em;
-  margin: 0 0 1em 0;
-}
-
-.now li {
-  font-size: 1.2rem;
-  color: #003366;
-  margin-bottom: 0.25em;
-}
-
-.now .last-updated {
-  font-size: 0.6rem;
-  color: #003366;
-  margin-top: 2em;
-}
-
-/* Mobile Responsiveness */
+/* Mobile tweaks */
 @media (max-width: 600px) {
-  html,
-  body,
-  .site-wrapper {
-    overflow-x: hidden;
-  }
-
-  .container {
-    padding: 0 10px;
-    width: 100%;
-    max-width: 100%;
-  }
-
-  #header {
-    font-size: 1.3rem;
-    margin-bottom: 0.5em;
-  }
-
+  body { font-size: 15px; }
+  .container { width: 92%; padding: 1.5rem 0 3rem; }
+  #logo { font-size: 1.25rem; }
+  .link { font-size: 1.15rem !important; }
   #header a:not(#logo) {
-    font-size: 0.8rem;
-    margin-right: 0.2em;
-    display: block;
-    margin-bottom: 0.5em;
-  }
-
-  #logo {
-    margin-bottom: 0.5em;
-    font-size: 1.3rem;
-  }
-
-  .blog-list {
-    max-width: 100%;
-    padding: 0 10px;
-  }
-
-  .entryLink {
-    margin-bottom: 1.5em;
-    font-size: 1.2rem;
-  }
-
-  .small {
-    font-size: 1.1rem;
-    margin-bottom: 0.33em;
-  }
-
-  .lightText {
-    font-size: 1.1rem;
-  }
-
-  .link {
-    font-size: 1.8rem !important;
-    line-height: 1.8;
-    font-weight: 700 !important;
-    color: #003366 !important;
-    font-family: var(--monospace);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  h1 {
-    font-size: 1.8rem !important;
-    line-height: 1.8;
-    font-weight: 700 !important;
-    color: #003366 !important;
-    font-family: var(--monospace);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-  }
-
-  .blog-post {
-    max-width: 100%;
-    padding: 0 10px;
-  }
-
-  .blog-post img,
-  .post-image {
-    max-width: 90% !important;
-    width: 100%;
-    height: auto;
-    margin: 0.5em auto;
-    object-fit: contain;
-  }
-
-  .archives {
-    max-width: 100%;
-    padding: 0 10px;
-  }
-
-  .archives h2 {
-    font-size: 1.5rem;
-  }
-
-  .archive-year-toggle {
-    font-size: 1.1rem;
-  }
-
-  .month-title {
-    font-size: 0.9rem;
-  }
-
-  .month-posts li {
-    font-size: 1.2rem;
-  }
-
-  .now {
-    max-width: 100%;
-    padding: 0 10px;
-  }
-
-  .now h2 {
-    font-size: 1.5rem;
-  }
-
-  .now h3 {
-    font-size: 1.1rem;
-  }
-
-  .now h4 {
-    font-size: 0.9rem;
-  }
-
-  .now li {
-    font-size: 1.2rem;
-  }
-
-  .now .last-updated {
-    font-size: 0.5rem;
+    display: inline-block;
+    margin: 0.25rem 0.6rem 0.25rem 0;
   }
 }
 
-/* Dark mode for system preference */
+/* Disable the old system dark-mode overrides so the terminal look is consistent */
 @media (prefers-color-scheme: dark) {
-  body {
-    background: #12262b !important;
-    color: #bedfe5 !important;
-  }
-
-  #header {
-    color: #bedfe5 !important;
-  }
-
-  #logo {
-    color: #bedfe5 !important;
-  }
-
-  #header a:not(#logo) {
-    color: #bedfe5 !important;
-  }
-
-  #header a:hover {
-    color: #d1e8f0 !important;
-  }
-
-  .entryLink {
-    color: #bedfe5 !important;
-  }
-
-  .entryLink:hover {
-    color: #d1e8f0 !important;
-  }
-
-  .small {
-    color: #bedfe5 !important;
-  }
-
-  .small:hover {
-    color: #d1e8f0 !important;
-  }
-
-  .link {
-    color: #bedfe5 !important;
-  }
-
-  .lightText {
-    color: #bedfe5 !important;
-  }
-
-  .lightText:hover {
-    color: #d1e8f0 !important;
-  }
-
-  h1 {
-    color: #bedfe5 !important;
-  }
-
-  p {
-    color: #bedfe5 !important;
-  }
-
-  .archives h2 {
-    color: #bedfe5 !important;
-  }
-
-  .archive-year-toggle {
-    color: #bedfe5 !important;
-  }
-
-  .archive-year-toggle:hover {
-    color: #d1e8f0 !important;
-  }
-
-  .month-title {
-    color: #bedfe5 !important;
-  }
-
-  .month-title:hover {
-    color: #d1e8f0 !important;
-  }
-
-  .month-posts li {
-    color: #bedfe5 !important;
-  }
-
-  .month-posts a {
-    color: #bedfe5 !important;
-  }
-
-  .month-posts a:hover {
-    color: #d1e8f0 !important;
-  }
-
-  .now h2 {
-    color: #bedfe5 !important;
-  }
-
-  .now h3 {
-    color: #bedfe5 !important;
-  }
-
-  .now h4 {
-    color: #bedfe5 !important;
-  }
-
-  .now li {
-    color: #bedfe5 !important;
-  }
-
-  .now .last-updated {
-    color: #bedfe5 !important;
-  }
+  /* intentionally empty – we force the terminal palette */
 }
