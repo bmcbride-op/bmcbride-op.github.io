@@ -143,32 +143,25 @@ body::after {
   text-align: left;
 }
 
+/* === Fixed hover for blog entries === */
+
 .entryLink {
   display: block;
   margin-bottom: 2.2em;
   text-decoration: none;
   color: var(--text);
+  padding: 0.15em 0;          /* small padding so the invert looks clean */
+  transition: none;           /* keep the hard terminal feel */
 }
 
-.entryLink:hover {
-  background: transparent; /* keep clean; text color changes instead */
-}
-
-.entryLink:hover .link,
-.entryLink:hover .small {
-  background: var(--text);
-  color: var(--bg);
-  text-shadow: none;
-}
-
-.small {
+.entryLink .small {
   font-size: 0.9rem;
   color: var(--accent);
   display: block;
   margin-bottom: 0.25em;
 }
 
-.link {
+.entryLink .link {
   font-size: 1.25rem !important;
   font-weight: 600 !important;
   color: var(--text) !important;
@@ -182,6 +175,21 @@ body::after {
   font-size: 0.95rem;
   display: block;
   margin-top: 0.15em;
+}
+
+/* Hover: invert the whole entry cleanly */
+.entryLink:hover {
+  background: var(--text);
+  color: var(--bg);
+  text-shadow: none;
+}
+
+.entryLink:hover .small,
+.entryLink:hover .link,
+.entryLink:hover span:last-child {
+  color: var(--bg) !important;
+  background: transparent;
+  text-shadow: none;
 }
 
 /* General typography */
