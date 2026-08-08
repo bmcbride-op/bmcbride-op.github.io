@@ -2,12 +2,37 @@
 layout: default
 title: Brandon McBride
 ---
-<div class="blog-list">
-  {% for post in site.posts %}
-    <a href="{{ post.url }}" class="entryLink">
-      <span class="small">{{ post.date | date: "%B %-d, %Y" }}</span>
-      <b class="link">{{ post.title }}</b>
-      <span style="margin-top: -0.33em; display: block;">{{ post.content | strip_html | truncate: 100 }}</span>
-    </a>
-  {% endfor %}
+
+<p class="prompt">brandon@housemcbride:~$ <span class="cmd">telnet bbs.housemcbride.local 23</span></p>
+<p class="bbs-connect">
+  Trying 127.0.0.1...<br>
+  Connected to bbs.housemcbride.local.<br>
+  Escape character is '^]'.
+</p>
+
+<div class="bbs-banner">
+  <p class="bbs-title">housemcbride :// bbs</p>
+  <p class="bbs-sub">personal notes · old web · forest thoughts</p>
 </div>
+
+<p class="bbs-status">
+  Messages on file: {{ site.posts.size }} &middot; <a href="/feed.xml">RSS</a>
+</p>
+
+<p class="bbs-header" aria-hidden="true">
+  <span>#</span>
+  <span>DATE</span>
+  <span>SUBJECT</span>
+</p>
+
+<ul class="bbs">
+  {% for post in site.posts %}
+    <li>
+      <span class="msgnum">{{ site.posts.size | minus: forloop.index0 }}</span>
+      <span class="msgdate">{{ post.date | date: "%b %d %Y" }}</span>
+      <span class="msgsubj">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </span>
+    </li>
+  {% endfor %}
+</ul>
