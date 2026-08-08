@@ -593,3 +593,68 @@ pre.finger {
     display: none;
   }
 }
+
+/* =========================================================
+   x99 labs wordmark (same style as x51 labs)
+   ========================================================= */
+
+.site-footer {
+  text-align: center;
+  margin: 6em 0 2.5em;
+}
+
+.site-footer > a:hover {
+  background: transparent; /* prevent normal link invert on the wordmark */
+}
+
+.x99-wordmark {
+  --wm-ink: #EFF7D3;
+  --wm-ground: #464F41;
+  display: inline-block;
+  font-family: "JetBrains Mono", "Berkeley Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  word-spacing: -0.05em;
+  white-space: nowrap;
+  color: var(--wm-ink);
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.x99-wordmark * {
+  font-size: inherit;
+  text-decoration: none;
+}
+
+.x99-wordmark__block {
+  display: inline-flex;
+  align-items: stretch;
+  vertical-align: baseline;
+  margin-left: 0.1em;
+}
+
+.x99-wordmark__tag {
+  background: var(--wm-ink);
+  color: var(--wm-ground);
+  padding: 0.14em 0.28em 0.16em;
+}
+
+.x99-wordmark__block::after {
+  content: "";
+  align-self: stretch;
+  width: 0.36em;
+  margin-left: 0.16em;
+  background: var(--wm-ink);
+}
+
+/* Optional modern trim for cleaner vertical alignment */
+@supports (text-box-trim: trim-both) {
+  .x99-wordmark__tag {
+    text-box-trim: trim-both;
+    text-box-edge: text alphabetic;
+    padding-top: 0.13em;
+    padding-bottom: 0.13em;
+  }
+}
