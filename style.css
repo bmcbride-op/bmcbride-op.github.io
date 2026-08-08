@@ -663,3 +663,72 @@ pre.finger {
     padding-bottom: 0.13em;
   }
 }
+/* =========================================================
+   Archives accordion (years → months → posts)
+   ========================================================= */
+
+/* Hide the actual checkboxes */
+.archive-toggle {
+  display: none;
+}
+
+/* Year labels */
+.archive-year-toggle {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  margin: 1.5em 0 0.4em 0;
+  user-select: none;
+}
+.archive-year-toggle:hover {
+  background: var(--text);
+  color: var(--bg);
+  text-shadow: none;
+}
+
+/* Month labels */
+.month-title {
+  display: block;
+  font-size: 1.05rem;
+  color: var(--muted);
+  cursor: pointer;
+  margin: 0.6em 0 0.3em 1.2em;
+  user-select: none;
+}
+.month-title:hover {
+  color: var(--text);
+}
+
+/* Content is hidden by default */
+.archive-year-content,
+.month-content {
+  display: none;
+  margin-left: 0.5em;
+}
+
+/* Show content when checkbox is checked */
+.archive-toggle:checked ~ .archive-year-content,
+.archive-toggle:checked ~ .month-content {
+  display: block;
+}
+
+/* Post list under each month */
+ul.month-posts {
+  list-style: none;
+  margin: 0 0 1em 1.8em;
+  padding: 0;
+}
+ul.month-posts li {
+  margin-bottom: 0.35em;
+}
+ul.month-posts a {
+  color: var(--text);
+  text-decoration: none;
+}
+ul.month-posts a:hover {
+  background: var(--text);
+  color: var(--bg);
+  text-shadow: none;
+}
