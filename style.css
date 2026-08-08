@@ -595,7 +595,7 @@ pre.finger {
 }
 
 /* =========================================================
-   x99 labs wordmark
+   house mcbride wordmark
    ========================================================= */
 
 .site-footer {
@@ -603,12 +603,11 @@ pre.finger {
   margin: 7em 0 2.5em;
 }
 
-/* Prevent the normal link invert on the wordmark itself */
 .site-footer > a:hover {
   background: transparent;
 }
 
-.x99-wordmark {
+.house-wordmark {
   --wm-ink: #EFF7D3;
   --wm-ground: #464F41;
 
@@ -625,28 +624,26 @@ pre.finger {
   text-shadow: none;
 }
 
-/* Critical: defeat any global body * { font-size: 16px } rules */
-.x99-wordmark,
-.x99-wordmark * {
+.house-wordmark,
+.house-wordmark * {
   font-size: 1.4rem !important;
   text-decoration: none;
 }
 
-.x99-wordmark__block {
+.house-wordmark__block {
   display: inline-flex;
   align-items: stretch;
   vertical-align: baseline;
   margin-left: 0.1em;
 }
 
-.x99-wordmark__tag {
+.house-wordmark__tag {
   background: var(--wm-ink);
   color: var(--wm-ground);
   padding: 0.14em 0.28em 0.16em;
 }
 
-/* The solid vertical bar on the right */
-.x99-wordmark__block::after {
+.house-wordmark__block::after {
   content: "";
   align-self: stretch;
   width: 0.36em;
@@ -654,9 +651,8 @@ pre.finger {
   background: var(--wm-ink);
 }
 
-/* Modern browsers get slightly cleaner vertical alignment */
 @supports (text-box-trim: trim-both) {
-  .x99-wordmark__tag {
+  .house-wordmark__tag {
     text-box-trim: trim-both;
     text-box-edge: text alphabetic;
     padding-top: 0.13em;
