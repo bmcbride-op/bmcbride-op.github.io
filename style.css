@@ -525,3 +525,71 @@ ul.bbs .msgsubj a:hover {
 .blog-post > h1 {
   display: none; /* we no longer use the old date + h1 on posts */
 }
+
+/* =========================================================
+   /now page — terminal `w` style (x51.dev/now inspired)
+   ========================================================= */
+
+.w-uptime {
+  color: var(--accent);
+  margin: 0 0 0.75em 0;
+  text-align: left;
+}
+
+.w-header,
+ul.w li {
+  display: grid;
+  grid-template-columns: 10ch 10ch 8ch 1fr;
+  column-gap: 1.5rem;
+  margin-bottom: 0.5em;
+  text-align: left;
+}
+
+.w-header {
+  color: var(--accent);
+  margin-bottom: 0.5em;
+  font-size: 0.9rem;
+}
+
+ul.w {
+  list-style: none;
+  margin: 0 0 2em 0;
+  padding: 0;
+}
+
+ul.w .user {
+  color: var(--text);
+}
+ul.w .tty,
+ul.w .idle {
+  color: var(--accent);
+}
+ul.w .what {
+  color: var(--muted);
+}
+
+/* finger-style pre block used for the reading log */
+pre.finger {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin: 0 0 1.5em 0;
+  color: var(--muted);
+  white-space: pre-wrap;
+  line-height: 1.4;
+}
+
+/* Mobile: collapse the columns */
+@media (max-width: 768px) {
+  .w-header {
+    display: none;
+  }
+  ul.w li {
+    grid-template-columns: 1fr;
+    margin-bottom: 1em;
+  }
+  ul.w .tty,
+  ul.w .idle {
+    display: none;
+  }
+}
