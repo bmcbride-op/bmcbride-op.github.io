@@ -2,44 +2,75 @@
 layout: default
 title: Now
 ---
-<div class="now">
-  <h2>Here's what I'm doing now.</h2>
-  <h3><i>Work</i></h3>
-  <ul>
-    <li>Art Director & Design Manager at a local design business.</li>
-    <li>Photography and digital editing for enhance photos and subjects.</li>
-  </ul>
-  <h3><i>This Site</i></h3>
-  <ul>
-    <li>Building out the first version of this site, dated 2025.</li>
-  </ul>
-  <h3><i>Learning</i></h3>
-  <ul>
-    <li>Development and understanding of HTML, CSS, JAVA, JavaScript, & Python.</li>
-    <li>Learning color simulated seperations through Photoshop.</li>
-  </ul>
-  <h3><i>Productivity</i></h3>
-  <ul>
-    <li>Organization of my digital life through the use of the <a href="https://johnnydecimal.com">Johnny Decimal System.</a></li>
-    <li>Coaching Boys U6 & Girls U9 Soccer</li>
-  </ul>
-  <h3><i>Tools</i></h3>
-  <ul>
-    <li><a href="https://en.wikipedia.org/wiki/Sony_α7R_II">Sony alpha 7RII DSLR Camera (2015)</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Canon_EOS_5D">Canon 5D (2005)</a></li>
-    <li>Sony TRV-99 Handycam Camcorder (1998)</li>
-    <li>Apple MacBook Pro 14" M1 Max w/ 32g ram</li>
-    <li>Custom Build PC -- AMD 7600 x3D / Nvidia Geforce 4080 Super / 32g Ram</li>
-    <li>Apple iPhone 13 Pro Max</li>
-  </ul>
-  <h3><i>Playing</i></h3>
-  <ul>
-    <li>Ultima Online (PC)</li>
-    <li>Resident Evil Requiem (Steam)</li>
-    <li>Dead or Alive 6 (Steam)</li>
-  </ul>
-  <p class="last-updated">Last updated {{ "now" | date: "%Y-%m-%d" }}.</p>
-</div>
 
+<p class="prompt">brandon@housemcbride:~$ <span class="cmd">w</span></p>
+<p class="w-uptime"> {{ "now" | date: "%Y-%m-%d" }}  up forever,  sessions active,  load average: steady</p>
 
+<p class="w-header" aria-hidden="true">
+  <span>USER</span>
+  <span>TTY</span>
+  <span>IDLE</span>
+  <span>WHAT</span>
+</p>
 
+<ul class="w">
+  <li>
+    <span class="user">brandon</span>
+    <span class="tty">dayjob</span>
+    <span class="idle">0.00s</span>
+    <span class="what">Art Director &amp; Design Manager at a local design business</span>
+  </li>
+  <li>
+    <span class="user">brandon</span>
+    <span class="tty">photo</span>
+    <span class="idle">0.00s</span>
+    <span class="what">Photography &amp; digital editing</span>
+  </li>
+  <li>
+    <span class="user">brandon</span>
+    <span class="tty">site</span>
+    <span class="idle">0.00s</span>
+    <span class="what">building out housemcbride.com</span>
+  </li>
+  <li>
+    <span class="user">brandon</span>
+    <span class="tty">learn</span>
+    <span class="idle">0.00s</span>
+    <span class="what">HTML, CSS, JavaScript, Python + color separations in Photoshop</span>
+  </li>
+  <li>
+    <span class="user">brandon</span>
+    <span class="tty">org</span>
+    <span class="idle">0.00s</span>
+    <span class="what">Johnny Decimal system for digital life</span>
+  </li>
+  <li>
+    <span class="user">brandon</span>
+    <span class="tty">soccer</span>
+    <span class="idle">0.00s</span>
+    <span class="what">coaching boys U7 &amp; & girls U9 club soccer</span>
+  </li>
+  <li>
+    <span class="user">brandon</span>
+    <span class="tty">gear</span>
+    <span class="idle">1d</span>
+    <span class="what">Sony α7R II · Canon 5D · Sony TRV-99 · MacBook Pro M1 Max · custom PC</span>
+  </li>
+  <li>
+    <span class="user">brandon</span>
+    <span class="tty">play</span>
+    <span class="idle">0.00s</span>
+    <span class="what">Ultima Online · Halo (2001)</span>
+  </li>
+</ul>
+
+<p class="prompt">brandon@housemcbride:~$ <span class="cmd">tail -1 ~/reading.log</span></p>
+<pre class="finger">[2026-08-07] currently reading / watching / playing — update this line when it changes</pre>
+
+<p>
+  What has my attention right now — a classic 
+  <a rel="external" href="https://nownownow.com/about">/now page</a>. 
+  Last updated <time datetime="{{ "now" | date: "%Y-%m-%d" }}">{{ "now" | date: "%-d %B %Y" }}</time>.
+</p>
+
+<p class="prompt">brandon@housemcbride:~$ <span class="cmd"><a href="/">cd ~</a></span> <span class="cursor">█</span></p>
