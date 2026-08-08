@@ -423,7 +423,7 @@ hr {
 .bbs-header,
 ul.bbs li {
   display: grid;
-  grid-template-columns: 4ch 14ch 1fr;
+  grid-template-columns: 4ch 26ch 1fr;
   column-gap: 1.25rem;
   margin-bottom: 0.4em;
   text-align: left;
