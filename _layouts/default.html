@@ -3,33 +3,59 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} | {{ site.title }}</title>
-    <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.title }}'s blog" href="/feed.xml">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.title }}" href="/feed.xml">
     <link rel="icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="/style.css">
-    <script src="/search.js" defer></script> <!-- Keep for search functionality -->
+    <script src="/search.js" defer></script>
   </head>
   <body>
     <div class="site-wrapper">
       <div class="container">
-        <br /><br /><br />
+
+        <!-- Shared terminal-style header / nav -->
         <div id="header">
           <a id="logo" href="/">brandon@housemcbride:~$</a>
           <a href="/" title="Home">Home</a>
           <a href="/now" title="Now">Now</a>
           <a href="/archives" title="Archives">Archives</a>
           <a href="/search" title="Search">Search</a>
-          <a href="mailto:hello@housemcbride.com" title="Contact Me">Contact Me</a> <!-- New contact link -->
+          <a href="mailto:hello@housemcbride.com" title="Contact">Contact</a>
         </div>
-        <br /><br /><br />
+
         <div class="blog-post">
           {% if page.date %}
-            <a href="{{ page.url }}" class="lightText">{{ page.date | date: "%B %-d, %Y" }}</a>
-            <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
+            <!-- ========== INDIVIDUAL POST (BBS message style) ========== -->
+            <p class="prompt">brandon@housemcbride:~$ <span class="cmd">telnet bbs.housemcbride.local 23</span></p>
+            <p class="bbs-connect">
+              Trying 127.0.0.1...<br>
+              Connected to bbs.housemcbride.local.
+            </p>
+
+            <div class="bbs-msg-header">
+              <p><span class="label">Posted:</span> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%a %b %d %Y %H:%M" }}</time></p>
+              <p><span class="label">From:&nbsp;&nbsp;</span> Brandon McBride</p>
+              <p><span class="label">Subj:&nbsp;&nbsp;</span> {{ page.title }}</p>
+            </div>
+
+            <article class="bbs-msg-body">
+              {{ content }}
+            </article>
+
+            <p class="bbs-pager">
+              [<a href="/">B</a>]ack to list
+              &middot;
+              [<a href="/">Q</a>]uit
+            </p>
+
+            <p class="prompt">brandon@housemcbride:~$ <span class="cmd"><a href="/">cd ~</a></span> <span class="cursor">█</span></p>
+
+          {% else %}
+            <!-- ========== NORMAL PAGES (homepage, archives, now, etc.) ========== -->
+            {{ content }}
           {% endif %}
-          {{ content }}
         </div>
-        <br /><br /><br />
+
       </div>
     </div>
   </body>
