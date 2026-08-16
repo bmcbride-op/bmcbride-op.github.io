@@ -24,11 +24,11 @@ After pressing the circle button to dodge, I get a chance to stop the bad guys. 
 
 I finish the mission, beat old Willy Fisk, and find myself in cutscene number ten or so by now. Then come the puzzles—three in a row. After finishing them, it cuts to another cutscene, and I find myself absolutely bored with the game. I turn it off.
 
-<img src="/images/re2.jpg" alt="Resident Evil 2" />
-
 Video games—especially the big-budget PlayStation titles—are far too overdeveloped. The fun has been completely stripped out of these games, and it’s obvious I’m not the target demographic for this kind of experience.
 
 These games feel like a blend of some gameplay and some cutscenes trying to be a hybrid movie-going experience. But all I really want to do is play the game.
+
+<img src="/images/re2.jpg" alt="Resident Evil 2" />
 
 I’m reminded of older titles, or even games that throw you into a world and let the story develop through gameplay. Half-Life and Portal were really good at this. Almost every Souls game is well known for it.
 
