@@ -14,7 +14,7 @@ Oh… there’s a message in the middle of my screen telling me a button combo t
 
 Well, it is for me at least.
 
-<img src="/images/Collision.jpg" alt="Spider-Man" />
+<img src="/images/Collision1.jpg" alt="Spider-Man" />
 
 Whatever. I press the combo and keep going. Again, the action slows down and I get another prompt—this time telling me to dodge incoming bullets. But I already knew that because a little icon had already popped up with a clear, visible line showing that someone was about to shoot at me.
 
